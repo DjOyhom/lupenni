@@ -1,0 +1,27 @@
+body{
+    margin:0px;
+}
+
+.header{
+    background-image: url("../img/header-back.jpg");
+    height: 960px;
+}
+
+.nav{
+    position: sticky;
+    height: 135px;
+}
+
+.navbar{
+    height: 55px;
+    top: 45px;
+    border-bottom: 35px;
+    background-color: red;
+    position: relative;
+    width: 100%;
+}
+
+.header-txt{
+    background-color: blue;
+    font-size: 250px;
+}
