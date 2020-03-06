@@ -9,19 +9,27 @@ body{
 
 .nav{
     position: sticky;
-    height: 135px;
+    height: 100px;
 }
 
 .navbar{
     height: 55px;
     top: 45px;
-    border-bottom: 35px;
     background-color: red;
     position: relative;
     width: 100%;
 }
 
 .header-txt{
-    background-color: blue;
-    font-size: 250px;
+    color: blue;
+    font-size: 160px;
+    line-height: 160px;
+    font-family: 'Trade Gothic 20 Condensed';
+    margin: 0px;
+}
+
+.div-header-txt{
+    padding: 0% 5%; 
+    background-image: url('../img/banner-top.png');
+    height: 700px;
 }
