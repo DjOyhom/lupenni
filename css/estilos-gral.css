@@ -101,13 +101,13 @@ body{
 } */
 
 .galeria{
-    height: 1100px;
+    height: 1200px;
     background-color: white;
 }
 
 .galeria-back-gris{
     position: absolute;
-    height: 700px;
+    height: 720px;
     background-color: grey;
     top: 2900px;
     width: 100%;
@@ -141,6 +141,64 @@ body{
     left: 45%;
     width: 45%;
     z-index: 2;
+}
+
+.after-galeria{
+    height: 800px;
+    background-color: #333;
+}
+
+.after-galeria-h1{
+    margin: 0;
+    padding-top: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+.after-galeria-tabla{
+    background-color: blue;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.after-galeria-text{
+    height: 100%;
+    width: 60%;
+    background-color: green;
+    z-index: 20;
+}
+
+.after-galeria-img{
+    height: 100%;
+    width: 40%;
+    background-color: aqua;
+    z-index: 20;
+}
+
+.programa{
+    padding: 5%;
+    height: 800px;
+    background-color: antiquewhite;
+}
+
+.program-1{
+    background-color: #555;
+}
+
+.program-1-title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.program-1-title-img{
+    width: 130px;
+    height: 130px;
+    background-image: url('../img/fb.png');
 }
 
 .parallax{
