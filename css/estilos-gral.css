@@ -1,10 +1,15 @@
+:root {
+    --main-bg-color: coral;
+    --turquesa: rgb(0,255,255);
+}
+
 body{
     margin:0px;
 }
 
 .header{
-    background-image: url("../img/header-back.jpg");
-    height: 960px;
+    background-image: url('../img/banner-top.png');
+    height: 800px;
 }
 
 .nav{
@@ -14,8 +19,8 @@ body{
 
 .navbar{
     height: 55px;
-    top: 45px;
-    background-color: red;
+    padding-top: 45px;
+    background: linear-gradient(to right,rgba(255,255,0,0.5), rgba(225,0,0,0.5));
     position: relative;
     width: 100%;
 }
@@ -26,10 +31,22 @@ body{
     line-height: 160px;
     font-family: 'Trade Gothic 20 Condensed';
     margin: 0px;
+    height: 100%;
+    padding: 0% 5% 0% 5%; 
+    background: linear-gradient(to right, rgba(255,255,0,0.5), rgba(225,0,0,0.5));
 }
 
 .div-header-txt{
-    padding: 0% 5%; 
-    background-image: url('../img/banner-top.png');
     height: 700px;
+}
+
+.before-feature{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature{
+    height: 800px;
 }
