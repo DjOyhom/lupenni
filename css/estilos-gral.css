@@ -50,3 +50,24 @@ body{
 .feature{
     height: 800px;
 }
+
+.feature-title{
+    height: 250px;
+    background-color: aqua;
+}
+
+.feature-tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-tabla-col{
+    width: 50%;
+    height: 550px;
+}
+
+.feature-tabla-col-row{
+    width: 100%;
+    height: 33.33333%;
+}
