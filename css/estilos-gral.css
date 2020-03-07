@@ -45,6 +45,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .feature{
@@ -54,6 +55,7 @@ body{
 .feature-title{
     height: 250px;
     background-color: aqua;
+    margin: 0px;
 }
 
 .feature-tabla{
@@ -70,4 +72,17 @@ body{
 .feature-tabla-col-row{
     width: 100%;
     height: 33.33333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(255,255,0,0.5), rgba(225,0,0,0.5));
+    z-index: -10;
 }
