@@ -185,7 +185,6 @@ body{
 
 .programa{
     padding: 5%;
-    height: 800px;
     background-color: antiquewhite;
 }
 
@@ -204,19 +203,6 @@ body{
     width: 130px;
     height: 130px;
     background-image: url('../img/fb.png');
-}
-
-/* .content{
-    background-color: aliceblue;
-} */
-
-.fade-out{
-    animation-name: example;
-    animation-duration: 4s;
-}
-
-.z-2{
-    z-index: 2;
 }
 
 .frase{
