@@ -278,6 +278,15 @@ body{
     z-index: 3;
 }
 
+.footer{
+    color: white;
+    height: 300px;
+    width: 100%;
+    background: linear-gradient(to top, rgb(0,0,0), rgb(30,30,30));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 @keyframes example {
