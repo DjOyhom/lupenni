@@ -302,12 +302,12 @@ body{
 
 .menu-foto{
     height: 100vh;
-    width: 60%;
+    width: 70%;
     background-color: violet;
 }
 .menu-items{
     height: 100vh;
-    width: 40%;
+    width: 30%;
     background-color: red;
 }
 

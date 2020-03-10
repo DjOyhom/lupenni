@@ -19,7 +19,7 @@
         <nav class="nav">
             <div class="navbar">
                 <img src="" alt="">
-                <img src="" alt="">
+                <img src="./img/3.png" onclick="abrirMenu()" style="position: fixed;" id="btn-menu" alt="">
             </div>
         </nav>
 
@@ -229,12 +229,25 @@
     <div class="parallax"></div>
 
 
-    <div class="menu">
+    <div id="menu" class="menu">
         <div class="menu-foto"></div>
-        <div class="menu-items"></div>
+        <div class="menu-items">
+            <h1 onclick="cerrarMenu()">SALIR</h1>
+        </div>
     </div>
 
-
+    <script>
+        function abrirMenu(){
+            var menu = document.getElementById('menu');
+            menu.classList.remove('menu-fade-out');
+            menu.classList.add("menu-fade-in");
+        }
+        function cerrarMenu(){
+            var menu = document.getElementById('menu');
+            menu.classList.remove('menu-fade-in');
+            menu.classList.add("menu-fade-out");
+        }
+    </script>
     <script src="./js/nieveles.js "></script>
 
 </body>
