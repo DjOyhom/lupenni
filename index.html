@@ -137,16 +137,9 @@
         <div class="programa">
             <h1 class="after-galeria-h1">Programa</h1>
             <div class="program">
-                <div class="program-1-title">
-                    <div class="program-1-title-img"></div>
-                    <h3>NIVEL 1</h3>
-                </div>
-                <div class="fade-out">
-                    <ul class="content">
-                        <li>Coffee</li>
-                        <li>Tea</li>
-                        <li>Milk</li>
-                    </ul>  
+                <button class="collapsible">Open Collapsible</button>
+                <div class="content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
             </div>
             <div class="program">
@@ -229,77 +222,21 @@
 
     <div class="parallax"></div>
 
-    <nav role="navigation" class="nav">
-        <ul class="nav-items">
-            <li class="nav-item">
-                <a href="#" class="nav-link"><span>Home</span></a>
-            </li> 
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link"><span>Products</span></a>
-                <nav class="submenu">
-                    <ul class="submenu-items">
-                        <li class="submenu-item"><a href="#" class="submenu-link">Product #1</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">Product #2</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">Product #3</a></li>
-                    </ul>
-                </nav>
-            </li> 
-            <li class="nav-item">
-                <a href="#" class="nav-link"><span>Services</span></a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link"><span>Pricing</span></a>
-            </li> 
-            <li class="nav-item">
-                <a href="#" class="nav-link"><span>News</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="#" class="nav-link"><span>More</span></a>
-                <nav class="submenu">
-                    <ul class="submenu-items">
-                        <li class="submenu-item"><a href="#" class="submenu-link">About</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">Contact</a></li>
-                        <li class="submenu-item"><hr class="submenu-seperator" /></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">Support</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">FAQs</a></li>
-                        <li class="submenu-item"><a href="#" class="submenu-link">Careers</a></li>
-                    </ul>
-                </nav>
-            </li>  
-        </ul>
-    </nav>
-
-
-
-
-
-
 
     <script>
-        [].slice.call(document.querySelectorAll('.dropdown .nav-link')).forEach(function(el){
-            el.addEventListener('click', onClick, false);
-        });
-
-        function onClick(e){
-            e.preventDefault();
-            var el = this.parentNode;
-            el.classList.contains('show-submenu') ? hideSubMenu(el) : showSubMenu(el);
-        }
-
-        function showSubMenu(el){
-            el.classList.add('show-submenu');
-            document.addEventListener('click', function onDocClick(e){
-                e.preventDefault();
-                if(el.contains(e.target)){
-                    return;
-                }
-                document.removeEventListener('click', onDocClick);
-                hideSubMenu(el);
-            });
-        }
-
-        function hideSubMenu(el){
-            el.classList.remove('show-submenu');
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
         }
     </script>
 

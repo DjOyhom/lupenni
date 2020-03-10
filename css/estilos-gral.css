@@ -206,9 +206,9 @@ body{
     background-image: url('../img/fb.png');
 }
 
-.content{
+/* .content{
     background-color: aliceblue;
-}
+} */
 
 .fade-out{
     animation-name: example;
