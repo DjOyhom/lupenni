@@ -7,6 +7,10 @@ body{
     margin:0px;
 }
 
+.margin-cero{
+    margin: 0;
+}
+
 .header{
     background-image: url('../img/banner-top.png');
     height: 800px;
@@ -185,8 +189,9 @@ body{
     background-color: antiquewhite;
 }
 
-.program-1{
+.program{
     background-color: #555;
+    margin: 0% 0% 5% 0%;
 }
 
 .program-1-title{
@@ -200,6 +205,85 @@ body{
     height: 130px;
     background-image: url('../img/fb.png');
 }
+
+.content{
+    background-color: aliceblue;
+}
+
+.fade-out{
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.frase{
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(to right, rgba(255,255,0,0.5), rgba(225,0,0,0.5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto{
+    background-color: grey;
+    color: white;
+}
+
+.contacto-center{
+    display: flex;
+    padding: 0% 10%;
+}
+
+.contact-input-div-left{
+    width: 60%;
+}
+.contact-input-div-right{
+    width: 40%;
+}
+
+.contact-input-div-100{
+    width: 100%;
+}
+
+.input-contact-left{
+    width: 80%;
+}
+.input-contact-right{
+    width: 100%;
+}
+
+.input-contact-100{
+    width: 100%;
+}
+
+.div-input-contact{
+    position: relative;
+    display: flex;
+    height: 50px;
+    background-color: aqua;
+}
+
+.inputs-contact{
+    background-color: #3CBC8D;
+    color: white;
+    border: none;
+    border-bottom: 5px solid red;
+    padding: 5px 10px;
+    left: 0;
+}
+
+.titulo-contact{
+    font-size: 30px;
+    margin: 0;
+    z-index: 3;
+}
+
+
+
+@keyframes example {
+    from {top: -100%;}
+    to {top: 100%;}
+  }
 
 .parallax{
     position: fixed;
