@@ -215,6 +215,10 @@ body{
     animation-duration: 4s;
 }
 
+.z-2{
+    z-index: 2;
+}
+
 .frase{
     height: 150px;
     width: 100%;
@@ -290,8 +294,8 @@ body{
 
 
 @keyframes example {
-    from {top: -100%;}
-    to {top: 100%;}
+    from {top: -100px;}
+    to {top: 0px;}
   }
 
 .parallax{

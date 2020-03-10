@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="./css/estilos-sm.css">
     <link rel="stylesheet" href="./css/estilos-xs.css">
     <link rel="stylesheet" href="./css/estilos-gral.css">
-    <link rel="stylesheet" href="./css/estilos-scss.css">
+    <link rel="stylesheet" href="./css/estilos-input-contacto.css">
+    <link rel="stylesheet" href="./css/estilos-niveles.css">
 </head>
 <body>
     
@@ -140,8 +141,8 @@
                     <div class="program-1-title-img"></div>
                     <h3>NIVEL 1</h3>
                 </div>
-                <div>
-                    <ul class="content fade-out">
+                <div class="fade-out">
+                    <ul class="content">
                         <li>Coffee</li>
                         <li>Tea</li>
                         <li>Milk</li>
@@ -170,13 +171,13 @@
                 <div class="omrs-input-group w45">
                     <label class="omrs-input-underlined">
                         <input required>
-                        <span class="omrs-input-label">Normal</span>
+                        <span class="omrs-input-label">Nombre</span>
                     </label>
                 </div>
                 <div class="omrs-input-group w40">
                     <label class="omrs-input-underlined">
                         <input required>
-                        <span class="omrs-input-label">Normal</span>
+                        <span class="omrs-input-label">E-mail</span>
                     </label>
                 </div>
             </div>
@@ -184,13 +185,13 @@
                 <div class="omrs-input-group w45">
                     <label class="omrs-input-underlined">
                         <input required>
-                        <span class="omrs-input-label">Normal</span>
+                        <span class="omrs-input-label">Asunto</span>
                     </label>
                 </div>
                 <div class="omrs-input-group w40">
                     <label class="omrs-input-underlined">
                         <input required>
-                        <span class="omrs-input-label">Normal</span>
+                        <span class="omrs-input-label">Telefono</span>
                     </label>
                 </div>
             </div>
@@ -198,7 +199,7 @@
                 <div class="omrs-input-group w100">
                     <label class="omrs-input-underlined">
                         <input required>
-                        <span class="omrs-input-label">Normal</span>
+                        <span class="omrs-input-label">Mensaje</span>
                     </label>
                 </div>
             </div>
@@ -227,6 +228,81 @@
     <div class="invert"></div>
 
     <div class="parallax"></div>
+
+    <nav role="navigation" class="nav">
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="#" class="nav-link"><span>Home</span></a>
+            </li> 
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link"><span>Products</span></a>
+                <nav class="submenu">
+                    <ul class="submenu-items">
+                        <li class="submenu-item"><a href="#" class="submenu-link">Product #1</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Product #2</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Product #3</a></li>
+                    </ul>
+                </nav>
+            </li> 
+            <li class="nav-item">
+                <a href="#" class="nav-link"><span>Services</span></a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link"><span>Pricing</span></a>
+            </li> 
+            <li class="nav-item">
+                <a href="#" class="nav-link"><span>News</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link"><span>More</span></a>
+                <nav class="submenu">
+                    <ul class="submenu-items">
+                        <li class="submenu-item"><a href="#" class="submenu-link">About</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Contact</a></li>
+                        <li class="submenu-item"><hr class="submenu-seperator" /></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Support</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">FAQs</a></li>
+                        <li class="submenu-item"><a href="#" class="submenu-link">Careers</a></li>
+                    </ul>
+                </nav>
+            </li>  
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+    <script>
+        [].slice.call(document.querySelectorAll('.dropdown .nav-link')).forEach(function(el){
+            el.addEventListener('click', onClick, false);
+        });
+
+        function onClick(e){
+            e.preventDefault();
+            var el = this.parentNode;
+            el.classList.contains('show-submenu') ? hideSubMenu(el) : showSubMenu(el);
+        }
+
+        function showSubMenu(el){
+            el.classList.add('show-submenu');
+            document.addEventListener('click', function onDocClick(e){
+                e.preventDefault();
+                if(el.contains(e.target)){
+                    return;
+                }
+                document.removeEventListener('click', onDocClick);
+                hideSubMenu(el);
+            });
+        }
+
+        function hideSubMenu(el){
+            el.classList.remove('show-submenu');
+        }
+    </script>
+
 
 </body>
 </html>
