@@ -1,0 +1,104 @@
+.galeria-intro{
+    width: 100%;
+    height: 700px;
+    background-color: red;
+    padding: 5%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.galeria-intro-cuadro{
+    width: 90%;
+    height: 80%;
+    background-color: black;
+}
+
+.galeria-fotos{
+    width: 100%;
+    height: 4000px;
+}
+
+.foto-1{
+    position: absolute;
+    background-color: violet;
+    left: 5%;
+    top: 750px;
+    height: 400px;
+    width: 90%;
+}
+.foto-2{
+    position: absolute;
+    background-color: green;
+    left: 5%;
+    top: 1200px;
+    height: 400px;
+    width: 45%;
+
+}
+
+.foto-3{
+    position: absolute;
+    background-color: green;
+    left: 65%;
+    top: 1300px;
+    height: 600px;
+    width: 30%;
+}
+
+.foto-4{
+    position: absolute;
+    background-color: green;
+    left: 15%;
+    top: 1700px;
+    height: 350px;
+    width: 45%;
+}
+
+.foto-5{
+    position: absolute;
+    background-color: green;
+    left: 5%;
+    top: 2200px;
+    height: 600px;
+    width: 30%;
+}
+
+.foto-6{
+    position: absolute;
+    background-color: green;
+    left: 40%;
+    top: 2100px;
+    height: 800px;
+    width: 55%;
+}
+
+.foto-7{
+    position: absolute;
+    background-color: green;
+    left: 15%;
+    top: 3000px;
+    height: 500px;
+    width: 70%;
+}
+
+.foto-8{
+    position: absolute;
+    background-color: green;
+    left: 5%;
+    top: 3600px;
+    height: 1000px;
+    width: 45%;
+}
+
+.foto-9{
+    position: absolute;
+    background-color: green;
+    left: 55%;
+    top: 3750px;
+    height: 400px;
+    width: 40%;
+}
+
+
