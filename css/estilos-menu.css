@@ -1,0 +1,46 @@
+
+.menu{
+    position: fixed;
+    top: 0px;
+    left: +100%;
+    background-color: blue;
+    width: 100%;
+    height: 100vh;
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-fade-in{
+    animation: left-in 0.5s;
+    animation-fill-mode: forwards;
+}
+.menu-fade-out{
+    animation: left-out 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.menu-foto{
+    height: 100vh;
+    width: 70%;
+    background-color: violet;
+}
+.menu-items{
+    height: 100vh;
+    width: 30%;
+    background-color: red;
+}
+
+
+@keyframes left-in {
+    0% {left: +100%;}
+    70% {left: +10%;}
+    80% {left: +5%;}
+    100% {left: 0%;}
+}
+@keyframes left-out {
+    0% {left: 0%;}
+    70% {left: +90%;}
+    80% {left: +95%;}
+    100% {left: +100%;}
+}

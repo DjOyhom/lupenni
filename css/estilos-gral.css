@@ -1,10 +1,14 @@
 :root {
-    --main-bg-color: coral;
-    --turquesa: rgb(0,255,255);
+    --violeta: #b05cab;
+    --azul: #056b87;
+    --violeta-rgba: rgba(176,92,171,0.7);
+    --azul-rgba: rgba(5,107,135,0.7);
+    --gris: #333;
 }
 
 body{
     margin:0px;
+    /* overflow-x: hidden; */
 }
 
 .margin-cero{
@@ -12,36 +16,35 @@ body{
 }
 
 .header{
-    background-image: url('../img/banner-top.png');
-    height: 800px;
+    background-image: url('../img/DSC_-1@2x.png');
+    height: 110vh;
 }
 
-.nav{
-    position: sticky;
-    height: 100px;
+.lupenni-logo{
+    position: fixed;
+    top: 30px;
+    left: 45%;
+    width: 10%;
+    z-index: 300 !important;
 }
 
-.navbar{
-    height: 55px;
-    padding-top: 45px;
-    background: linear-gradient(to right,rgba(255,255,0,0.5), rgba(225,0,0,0.5));
-    position: relative;
-    width: 100%;
+.boton-hambur{
+    position: fixed;
+    top: 30px;
+    left: 90%;
+    width: 10%; 
 }
+
 
 .header-txt{
-    color: blue;
+    color: white;
     font-size: 160px;
     line-height: 160px;
     font-family: 'Trade Gothic 20 Condensed';
     margin: 0px;
-    height: 100%;
-    padding: 0% 5% 0% 5%; 
-    background: linear-gradient(to right, rgba(255,255,0,0.5), rgba(225,0,0,0.5));
-}
-
-.div-header-txt{
-    height: 700px;
+    height: 110vh;
+    padding: 8% 5% 0% 5%; 
+    background: linear-gradient(to right,var(--violeta-rgba), var(--azul-rgba));
 }
 
 .before-feature{
@@ -51,14 +54,17 @@ body{
     align-items: center;
     background-color: white;
 }
+/* ******************************************************************************************************* */
 
+
+/* ******************************************************************************************************* */
 .feature{
     height: 800px;
 }
 
 .feature-title{
     height: 250px;
-    background-color: aqua;
+    background-color: white;
     margin: 0px;
 }
 
@@ -68,85 +74,81 @@ body{
     align-items: center;
 }
 
-.feature-tabla-col{
-    width: 50%;
-    height: 550px;
+.feature-col-1{
+    width: 15vw;
+    border: 50px solid white;
 }
 
-.cel-r{
-    width: 70%; 
-    height: 100%; 
-    background-color: white;
+.feature-col-2{
+    width: 35vw;
+    border: 25px solid white;
+
 }
 
-.cel1{
-    width: 34%; 
-    height: 100%;
-    background: url('../img/4.png')  no-repeat left; 
-    background-position-x: 10%;
+.cel-1{
+    text-align: center;
 }
 
 .feature-tabla-col-row{
-    width: 100%;
-    height: 34%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* ******************************************************************************************************* */
 
-.invert{
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 500px;
-    height: 500px;
-    background: url('../img/favicon.png') no-repeat right;
-    mix-blend-mode: difference;
-}
 
+
+
+
+
+
+/* ******************************************************************************************************* */
 .galeria{
-    height: 1200px;
-    background-color: white;
-}
-
-.galeria-back-gris{
-    position: absolute;
-    height: 720px;
-    background-color: grey;
-    top: 2900px;
-    width: 100%;
+    height: 800px;
+    border-top: 500px solid white;
+    background-color: #333;
 }
 
 .galeria-img-1{
     position: absolute;
     height: 700px;
     top: 2750px;
-    background-color: green;
+    background-image: url('../img/DSC_6233.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     left: 10%;
     width: 30%;
-    z-index: 2;
 }
 
 .galeria-img-2{
     position: absolute;
     height: 500px;
     top: 2650px;
-    background-color: red;
+    background-image: url('../img/DSC_2349.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
     left: 45%;
     width: 45%;
-    z-index: 2;
 }
 
 .galeria-img-3{
     position: absolute;
-    height: 300px;
+    height: 450px;
     top: 3200px;
-    background-color: orange;
-    left: 45%;
+    background-image: url('../img/DSC_1518.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    left: 45%;
     width: 45%;
-    z-index: 2;
 }
 
+/* ******************************************************************************************************* */
+
+
+/* ******************************************************************************************************* */
 .after-galeria{
     height: 800px;
     background-color: #333;
@@ -156,12 +158,10 @@ body{
     margin: 0;
     padding-top: 200px;
     height: 200px;
-    background-color: red;
     color: white;
 }
 
 .after-galeria-tabla{
-    background-color: blue;
     height: 600px;
     width: 100%;
     display: flex;
@@ -172,20 +172,27 @@ body{
 .after-galeria-text{
     height: 100%;
     width: 60%;
-    background-color: green;
-    z-index: 20;
+    background-color: var(--gris);
+    color: white;
 }
 
 .after-galeria-img{
+    background-color: var(--gris);
+    background-image: url('../img/Trazado 39@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: 40%;
-    background-color: aqua;
-    z-index: 20;
 }
+/* ******************************************************************************************************* */
+
+
+/* ******************************************************************************************************* */
 
 .programa{
     padding: 5%;
-    background-color: antiquewhite;
+    background-color: var(--gris);
 }
 
 .program{
@@ -204,18 +211,28 @@ body{
     height: 130px;
     background-image: url('../img/fb.png');
 }
+/* ******************************************************************************************************* */
+
+
+/* ******************************************************************************************************* */
 
 .frase{
+    color: white;
     height: 150px;
     width: 100%;
-    background: linear-gradient(to right, rgba(255,255,0,0.5), rgba(225,0,0,0.5));
+    background: linear-gradient(to right, var(--violeta), var(--azul));
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* ******************************************************************************************************* */
+
+
+/* ******************************************************************************************************* */
 
 .contacto{
-    background-color: grey;
+    background-color: var(--gris);
+    height: 100vh;
     color: white;
 }
 
@@ -262,68 +279,32 @@ body{
     left: 0;
 }
 
-.titulo-contact{
-    font-size: 30px;
-    margin: 0;
-    z-index: 3;
+
+.frase-contacto{
+    color: white;
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(50deg, var(--violeta), var(--azul));
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer{
     color: white;
     height: 300px;
     width: 100%;
-    background: linear-gradient(to top, rgb(0,0,0), rgb(30,30,30));
+    background: linear-gradient(to top, rgb(0,0,0), rgb(10,10,10));
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.menu{
-    position: fixed;
-    top: 0px;
-    left: +100%;
-    background-color: blue;
-    width: 100%;
-    height: 100vh;
-    z-index: 300;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.menu-fade-in{
-    animation: left-in 0.5s;
-    animation-fill-mode: forwards;
-}
-.menu-fade-out{
-    animation: left-out 0.5s;
-    animation-fill-mode: forwards;
-}
-
-.menu-foto{
-    height: 100vh;
-    width: 70%;
-    background-color: violet;
-}
-.menu-items{
-    height: 100vh;
-    width: 30%;
-    background-color: red;
-}
-
-
-@keyframes left-in {
-    0% {left: +100%;}
-    70% {left: +10%;}
-    80% {left: +5%;}
-    100% {left: 0%;}
-}
-@keyframes left-out {
-    0% {left: 0%;}
-    70% {left: +90%;}
-    80% {left: +95%;}
-    100% {left: +100%;}
-}
+.invert{
+    mix-blend-mode: difference;
+ }
+ 
 
 .parallax{
     position: fixed;
