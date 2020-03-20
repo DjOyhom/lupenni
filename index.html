@@ -228,7 +228,7 @@
         document.onscroll = function(){
             var top  = window.pageYOffset || document.documentElement.scrollTop;
             var img1 = asd.offsetTop;
-            if (top >= img1) {
+            if (top >= img1 - 30) {
                 document.getElementById('logolupenni').classList.add('invert');
                 document.getElementById('btnburger').classList.add('invert');
             }else{
