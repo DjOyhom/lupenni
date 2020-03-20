@@ -47,6 +47,10 @@ body{
     background: linear-gradient(to right,var(--violeta-rgba), var(--azul-rgba));
 }
 
+/* ******************************************************************************************************* */
+
+/* ******************************************************************************************************* */
+
 .before-feature{
     height: 800px;
     display: flex;
@@ -234,11 +238,11 @@ body{
     background-color: var(--gris);
     height: 100vh;
     color: white;
+    padding: 100px 10%;
 }
 
 .contacto-center{
     display: flex;
-    padding: 0% 10%;
 }
 
 .contact-input-div-left{
@@ -315,3 +319,4 @@ body{
     background: linear-gradient(to top, rgb(0,0,0), rgb(225,0,0));
     z-index: -10;
 }
+

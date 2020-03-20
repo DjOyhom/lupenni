@@ -16,8 +16,10 @@
 </head>
 <body>
     
-    <img class="lupenni-logo invert" src="./img/Grupo 5.png" alt="">
-    <img class="boton-hambur" src="./img/Grupo 4.png" onclick="abrirMenu()" id="btn-menu" alt="">
+    <img class="lupenni-logo " id="logolupenni" src="./img/Grupo 5.png" alt="">
+    <div class="nav-icon " id="btnburger" onclick="menu()">
+        <div></div>
+    </div>
 
     <header class="header">
         <div class="div-header-txt">
@@ -31,13 +33,13 @@
     </header>
 
     <section>
-        <div class="before-feature">
+        <div class="before-feature" id="asd">
             <div>
                 <h2>Escuela de maquillaje</h2>
             </div>
 
             <div>
-                <img src="./img/Trazado 39@2x.png" width="500" height="500" alt="">
+                <img src="./img/Trazado 39@2x.png" width="500" alt="">
             </div>
 
             <div>
@@ -219,23 +221,27 @@
     <div id="menu" class="menu">
         <div class="menu-foto"></div>
         <div class="menu-items">
-            <h1 onclick="cerrarMenu()">SALIR</h1>
         </div>
     </div>
 
     <script>
-        function abrirMenu(){
-            var menu = document.getElementById('menu');
-            menu.classList.remove('menu-fade-out');
-            menu.classList.add("menu-fade-in");
-        }
-        function cerrarMenu(){
-            var menu = document.getElementById('menu');
-            menu.classList.remove('menu-fade-in');
-            menu.classList.add("menu-fade-out");
+        document.onscroll = function(){
+            var top  = window.pageYOffset || document.documentElement.scrollTop;
+            var img1 = asd.offsetTop;
+            if (top >= img1) {
+                document.getElementById('logolupenni').classList.add('invert');
+                document.getElementById('btnburger').classList.add('invert');
+            }else{
+                document.getElementById('logolupenni').classList.remove('invert');
+                document.getElementById('btnburger').classList.remove('invert');
+            }
+
         }
     </script>
+
+
     <script src="./js/nieveles.js "></script>
+    <script src="./js/menu.js "></script>
 
 </body>
 </html>
