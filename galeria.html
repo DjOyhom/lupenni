@@ -15,35 +15,38 @@
     <link rel="stylesheet" href="./css/estilos-contacto.css">
     <link rel="stylesheet" href="./css/estilos-niveles.css">
     <link rel="stylesheet" href="./css/estilos-galeria.css">
+    <link rel="stylesheet" href="./css/estilos-menu.css">
 </head>
 <body>
     
+    <img class="lupenni-logo " id="logolupenni" src="./img/Grupo 5.png" alt="">
+    <div class="nav-icon " id="btnburger" onclick="menu()">
+        <div></div>
+    </div>
 
     <section>
         <div class="galeria-intro">
             <div class="galeria-intro-cuadro">
-
+                <h1 style="margin: 0px;">Galeria</h1>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="asd">
         <div class="galeria-fotos">
-            <div class="foto-1" ></div>
-            <div class="foto-2" ></div>
-            <div class="foto-3" ></div>
-            <div class="foto-4" ></div>
-            <div class="foto-5" ></div>
-            <div class="foto-6" ></div>
-            <div class="foto-7" ></div>
-            <div class="foto-8" ></div>
-            <div class="foto-9" ></div>
-            <div class="foto-10" ></div>
-            <div class="foto-11" ></div>
-            <div class="foto-12" ></div>
-            <div class="foto-13" ></div>
-            <div class="foto-14" ></div>
-            <div class="foto-15" ></div>
+            <img class="foto-1" src="./img/DSC_2267@2x.png" alt="">
+            <img class="foto-2" src="./img/DSC_1691@2x.png" alt="">
+            <img class="foto-3" src="./img/DSC_6017-ph@2x.png" alt="">
+            <img class="foto-4" src="./img/DSC_5276@2x.png" alt="">
+            <img class="foto-5" src="./img/DSC_5000@2x.png" alt="">
+            <img class="foto-6" src="./img/DSC_8258@2x.png" alt="">
+            <img class="foto-7" src="./img/DSC_2029-ph-3@2x.png" alt="">
+            <img class="foto-8" src="./img/DSC_6064@2x.png" alt="">
+            <img class="foto-9" src="./img/DSC_2349@2x.png" alt="">
+            <img class="foto-10" src="./img/DSC_6141@2x.png" alt="">
+            <img class="foto-11" src="./img/DSC_1398-3@2x.png" alt="">
+            <img class="foto-12" src="./img/DSC_0842@2x.png" alt="">
+            <img class="foto-13" src="./img/DSC_1189@2x.png" alt="">
         </div>
     </section>
 
@@ -107,5 +110,45 @@
             <h2 class="margin-cero">"El maquillaje es arte en movimiento" - Lucia Pennino</h2>
         </div>
     </section>
+
+
+    <div id="menu" class="menu">
+        <div class="menu-foto"></div>
+        <div class="menu-items">
+            <img src="./img/Logo.png" class="logo-menu" alt=""><br>
+            <br>
+            <br>
+            <a href="index.html" class="menu-item">Inicio</a><br>
+            <a id="programamenu" class="menu-item">Programa</a><br>
+            <a href="contacto.html" class="menu-item">Contacto</a><br>
+            <a href="galeria.html" class="menu-item">Galeria</a><br>
+            <a href="index.html" class="menu-item">Empresas amigas</a><br>
+            <br><br>
+            <a href="" class="menu-item">094 092 463</a><br>
+            <a href="" class="menu-item">hola@lupenni.com</a><br>
+            <div class="insta-menu-div"> 
+                <img src="./img/Grupo 12@2x.png" alt="" class="insta-menu-img">
+                <a class="insta-menu-text" href="">Lupenni.studio</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.onscroll = function(){
+            var top  = window.pageYOffset || document.documentElement.scrollTop;
+            var img1 = asd.offsetTop;
+            if (top >= img1 - 30) {
+                document.getElementById('logolupenni').classList.add('invert');
+                document.getElementById('btnburger').classList.add('invert');
+            }else{
+                document.getElementById('logolupenni').classList.remove('invert');
+                document.getElementById('btnburger').classList.remove('invert');
+            }
+
+        }
+    </script>
+    <script src="./js/menu.js "></script>
+
 </body>
 </html>

@@ -31,9 +31,37 @@
 .menu-items{
     height: 100vh;
     width: 30%;
-    background-color: red;
+    padding-top: 5% !important;
+    padding-left: 5%;
+    background-color: var(--gris);
 }
 
+.menu-item{
+    border-bottom: 20px solid var(--azul); 
+    height: 10px; 
+    font-size: 20px; 
+    padding: 0px 10px 0px 5px; 
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    animation: border-azul 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.menu-item:hover{
+    animation: border-violeta 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border-violeta {
+    0% {border-bottom: 20px solid var(--azul); }
+    100% {border-bottom: 20px solid var(--violeta);}
+}
+
+@keyframes border-azul {
+    0% {border-bottom: 20px solid var(--violeta);}
+    100% {border-bottom: 20px solid var(--azul); }
+}
 
 @keyframes left-in {
     0% {left: +100%;}
@@ -80,4 +108,8 @@
   
 .nav-icon2 div {
     transform: scale(0);
+}
+
+.logo-menu{
+
 }

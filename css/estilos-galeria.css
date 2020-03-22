@@ -1,104 +1,142 @@
-.galeria-intro{
-    width: 100%;
-    height: 700px;
-    background-color: red;
-    padding: 5%;
-}
-
 body{
     overflow-x: hidden;
 }
 
+.galeria-intro{
+    height: 80vh;
+    border-top: 10vh solid var(--gris);
+    border-right: 5vw solid var(--gris);
+    border-bottom: 30vh solid var(--gris);
+    border-left: 5vw solid var(--gris);
+    background: linear-gradient(315deg,var(--violeta), var(--azul));
+}
+
 .galeria-intro-cuadro{
-    width: 90%;
-    height: 80%;
-    background-color: black;
+  height: 100%;
+  background-image: url('../img/Grupo 16@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.titulo-galeria{
+  position: relative;
+  top: -100px;
+}
+
+
+.imagen-galeria{
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
 }
 
 .galeria-fotos{
-    width: 100%;
-    height: 4000px;
+  border-top: 25vh solid var(--gris);
+  height: 880vh;
+  background-color: white;
 }
 
 .foto-1{
-    position: absolute;
-    background-color: violet;
-    left: 5%;
-    top: 750px;
-    height: 400px;
-    width: 90%;
+  top: 130vh;
+  position: absolute;
+  width: 90vw;
+  height: 50vh;
+  padding-left: 5vw;
 }
-.foto-2{
-    position: absolute;
-    background-color: green;
-    left: 5%;
-    top: 1200px;
-    height: 400px;
-    width: 45%;
 
+.foto-2{
+  position: absolute;
+  top: 190vh;
+  width: 40vw;
+  height: 50vh;
+  left: 5vw;
 }
 
 .foto-3{
-    position: absolute;
-    background-color: green;
-    left: 65%;
-    top: 1300px;
-    height: 600px;
-    width: 30%;
+  position: absolute;
+  top: 200vh;
+  width: 30vw;
+  left: 65vw;
 }
 
 .foto-4{
-    position: absolute;
-    background-color: green;
-    left: 15%;
-    top: 1700px;
-    height: 350px;
-    width: 45%;
+  position: absolute;
+  top: 250vh;
+  width: 45vw;
+  height: 60vh;
+  left: 15vw;
 }
 
 .foto-5{
-    position: absolute;
-    background-color: green;
-    left: 5%;
-    top: 2200px;
-    height: 600px;
-    width: 30%;
+  position: absolute;
+  top: 340vh;
+  width: 30vw;
+  height: 90vh;
+  left: 5vw;
 }
 
 .foto-6{
-    position: absolute;
-    background-color: green;
-    left: 40%;
-    top: 2100px;
-    height: 800px;
-    width: 55%;
+  position: absolute;
+  top: 320vh;
+  width: 50vw;
+  height: 130vh;
+  left: 40vw;
 }
 
 .foto-7{
-    position: absolute;
-    background-color: green;
-    left: 15%;
-    top: 3000px;
-    height: 500px;
-    width: 70%;
+  position: absolute;
+  top: 460vh;
+  width: 70vw;
+  height: 80vh;
+  left: 15vw;
 }
 
 .foto-8{
-    position: absolute;
-    background-color: green;
-    left: 5%;
-    top: 3600px;
-    height: 1000px;
-    width: 45%;
+  position: absolute;
+  top: 550vh;
+  width: 50vw;
+  left: 5vw;
+  height: 180vh;
 }
 
 .foto-9{
-    position: absolute;
-    background-color: green;
-    left: 55%;
-    top: 3750px;
-    height: 400px;
-    width: 40%;
+  position: absolute;
+  top: 560vh;
+  width: 35vw;
+  left: 60vw;
+  height: 50vh;
 }
 
+.foto-10{
+  position: absolute;
+  top: 630vh;
+  width: 35vw;
+  height: 110vh;
+  left: 60vw;
+}
 
+.foto-11{
+  position: absolute;
+  top: 750vh;
+  width: 90vw;
+  left: 5vw;
+  height: 130vh;
+}
+
+.foto-12{
+  position: absolute;
+  top: 900vh;
+  width: 45vw;
+  left: 5vw;
+  height: 110vh;
+}
+
+.foto-13{
+  position: absolute;
+  top: 890vh;
+  width: 40vw;
+  left: 55vw;
+  height: 130vh;
+}
