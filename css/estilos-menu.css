@@ -1,8 +1,7 @@
 
 .menu{
     position: fixed;
-    top: 0px;
-    left: +100%;
+    top: -150%;
     background-color: blue;
     width: 100%;
     height: 100vh;
@@ -12,11 +11,11 @@
     align-items: center;
 }
 .menu-fade-in{
-    animation: left-in 0.5s;
+    animation: top-in 0.5s;
     animation-fill-mode: forwards;
 }
 .menu-fade-out{
-    animation: left-out 0.5s;
+    animation: top-out 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -63,17 +62,17 @@
     100% {border-bottom: 20px solid var(--azul); }
 }
 
-@keyframes left-in {
-    0% {left: +100%;}
-    70% {left: +10%;}
-    80% {left: +5%;}
-    100% {left: 0%;}
+@keyframes top-in {
+    0% {top: -150%;}
+    70% {top: -10%;}
+    80% {top: -5%;}
+    100% {top: 0%;}
 }
-@keyframes left-out {
-    0% {left: 0%;}
-    70% {left: +90%;}
-    80% {left: +95%;}
-    100% {left: +100%;}
+@keyframes top-out {
+    0% {top: 0%;}
+    70% {top: -90%;}
+    80% {top: -95%;}
+    100% {top: -120%;}
 }
 
 

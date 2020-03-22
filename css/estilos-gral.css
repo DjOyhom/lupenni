@@ -195,7 +195,6 @@ body{
 }
 
 .after-galeria-tabla{
-    height: 600px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -207,16 +206,12 @@ body{
     width: 60%;
     background-color: var(--gris);
     color: white;
+    padding-left: 5vw;
+
 }
 
 .after-galeria-img{
     background-color: var(--gris);
-    background-image: url('../img/Trazado 39@2x.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 40%;
 }
 /* ******************************************************************************************************* */
 
