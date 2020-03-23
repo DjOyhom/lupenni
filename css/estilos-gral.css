@@ -99,7 +99,7 @@ body{
 }
 
 .feature-tabla{
-    border-bottom: 300px solid white;
+    border-bottom: 100px solid white;
 }
 
 .feature-tabla-row{
@@ -132,11 +132,23 @@ body{
     height: 10vw; 
     border-bottom: 50px solid white; 
     border-top: 50px solid white;
-    display: inline-block;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .feature-right{
     border-right: 5vw solid white;
+}
+
+.feature-h3-violeta-claro-left{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--violeta-feature); 
+    font-weight: 100;
+    padding: 0% 5%;
+    height: 30px !important;
+    width: 100%;
 }
 
 .feature-h3-violeta-claro{
@@ -145,6 +157,36 @@ body{
     border-bottom: 20px solid var(--violeta-feature); 
     font-weight: 100;
     padding: 0% 5%;
+    height: 30px !important;
+}
+
+.feature-h3-intermedio-claro-left{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--intermedio-feature); 
+    font-weight: 100;
+    padding: 0% 5%;
+    height: 30px;
+    margin: 0px !important;
+}
+
+.feature-h3-intermedio-claro{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--intermedio-feature); 
+    font-weight: 100;
+    padding: 0% 0% 0% 5%;
+    height: 30px;
+    width: 100% !important;
+}
+
+.feature-h3-azul-claro-left{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--azul-feature); 
+    font-weight: 100;
+    padding: 0% 5%;
+    width: 100%;
     height: 30px;
 }
 
@@ -153,24 +195,7 @@ body{
     font-size: 40px;
     border-bottom: 20px solid var(--azul-feature); 
     font-weight: 100;
-    padding: 0% 5%;
-    height: 30px;
-}
-
-.feature-h3-azul-claro-right{
-    font-family: 'Trade Gothic 18 Condensed';
-    font-size: 40px;
-    border-bottom: 20px solid var(--azul-feature); 
-    font-weight: 100;
-    padding: 0% 5%;
-    height: 30px;
-}
-.feature-h3-intermedio-claro{
-    font-family: 'Trade Gothic 18 Condensed';
-    font-size: 40px;
-    border-bottom: 20px solid var(--intermedio-feature); 
-    font-weight: 100;
-    padding: 0% 5%;
+    padding: 0% 0% 0% 5%;
     height: 30px;
 }
 
@@ -192,45 +217,35 @@ body{
 
 /* ******************************************************************************************************* */
 .galeria{
-    height: 800px;
-    border-top: 500px solid white;
-    background-color: #333;
+   background:  linear-gradient(180deg, white 30%, var(--gris) 30%);    
+   background-position: 0% 10%;
+}
+
+.galeria-flex{
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.relleno{
+    width: 100%;
+    height: 100px;
 }
 
 .galeria-img-1{
-    position: absolute;
-    height: 700px;
-    top: 2750px;
-    background-image: url('../img/DSC_6233.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 10%;
-    width: 30%;
+    width: 30vw;
+    margin: 5vw;
 }
 
 .galeria-img-2{
-    position: absolute;
-    height: 500px;
-    top: 2650px;
-    background-image: url('../img/DSC_2349.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    left: 45%;
-    width: 45%;
+    width: 90%;
+    padding: 0px 0px 10vh 0px;
+    height: 75vh;
 }
 
-.galeria-img-3{
-    position: absolute;
-    height: 450px;
-    top: 3200px;
-    background-image: url('../img/DSC_1518.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;    
-    left: 45%;
-    width: 45%;
+.galeria-img-3{   
+    width: 90%;
+    height: 75vh;
 }
 
 /* ******************************************************************************************************* */
@@ -238,6 +253,7 @@ body{
 
 /* ******************************************************************************************************* */
 .after-galeria{
+    padding-top: 200px;
     background-color: #333;
 }
 
