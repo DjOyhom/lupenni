@@ -1,31 +1,32 @@
-
 div.omrs-input-group {
-  margin-bottom: 1.5rem;
-  position: relative;
+	margin-bottom: 1.5rem;
+	margin-top: 50px;
+	position: relative;
 }
 
 .w100{
-	width: 100%;
+	width: 100vw;
 }
 .w45{
-	width: 45%;
+	width: 45vw;
 }
 .w40{
-	width: 40%;
-	margin-left: 15%;
+	width: 40vw;
+	margin-left: 15vw;
 }
 
 .omrs-input-underlined > input,
 .omrs-input-filled > input {
 	border: none;
-	border-bottom: 0.125rem solid gray;
+	border-bottom: 3px solid gray;
 	width: 100%;
 	height: 2rem;
-	font-size: 1.0625rem;
-	padding-left: 0.875rem;
+	font-size: 40px;
+	font-family: 'Trade Gothic 18 Condensed';
 	line-height: 147.6%;
 	padding-top: 0.825rem;
 	padding-bottom: 0.5rem;
+	color: white;
 }
 
 .omrs-input-underlined > input:focus,
@@ -36,38 +37,42 @@ div.omrs-input-group {
 .omrs-input-underlined > .omrs-input-label,
 .omrs-input-filled > .omrs-input-label {
 	position: absolute;
-	top: 0.9375rem;
+	top: 0px;
 	left: 0.875rem;
 	line-height: 147.6%;
-	color: gray;
+	color: white;
 	transition: top .2s;
+	font-size: 40px;
+	font-family: 'Trade Gothic 18 Condensed';
 }
 
 
 .omrs-input-underlined > .omrs-input-helper,
 .omrs-input-filled > .omrs-input-helper {
-	font-size: 0.9375rem;
-	color: gray;
+	font-size: 40px;
+	font-family: 'Trade Gothic 18 Condensed';
+	color: white;
 	letter-spacing: 0.0275rem;
 	margin: 0.125rem 0.875rem;
 }
 
 .omrs-input-underlined > input:hover,
 .omrs-input-filled > input:hover {
-	border-color: blue;
-	transition: border-color .5s;
+	border-color: var(--azul);
+	transition: border-color 1s;
 }
 
 .omrs-input-underlined > input:focus + .omrs-input-label,
 .omrs-input-underlined > input:valid + .omrs-input-label,
 .omrs-input-filled > input:focus + .omrs-input-label,
 .omrs-input-filled > input:valid + .omrs-input-label {
-	top: 0;
-	font-size: 0.9375rem;
+	top: -35px;
+	font-size: 20px;
+	font-family: 'Trade Gothic 18 Condensed';
 	margin-bottom: 32px;
 }
 
 .omrs-input-underlined > input {
-	border-color: violet;
-	background: orange;
+	border-color: var(--violeta);
+	background: var(--gris);
 }
