@@ -77,10 +77,10 @@
     color: var(--azul);
     font-weight: bold;
     text-decoration: none;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
 .about-a-info:hover{
     color: var(--violeta);
-    transition: all 1s;
+    transition: all 0.3s;
 }
