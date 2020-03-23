@@ -103,7 +103,7 @@
     top: 30px;
     left: 90%;
     width: 40px;
-    z-index: 30000 !important;
+    z-index: 300 !important;
 }
 
 .nav-icon:after, 
