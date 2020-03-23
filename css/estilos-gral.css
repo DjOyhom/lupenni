@@ -250,7 +250,7 @@ body{
 
 /* ******************************************************************************************************* */
 .after-galeria{
-    padding-top: 200px;
+    padding-top: 100px;
     background-color: #333;
 }
 
@@ -555,6 +555,20 @@ body{
     text-align: center;
     font-family: 'Trade Gothic 18 Condensed';
     font-size: 20px !important;
+}
+
+.footer-a{
+    text-align: center;
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 20px !important;
+    text-decoration: none;
+    color: white;
+    border-bottom: 0px solid white;
+    transition: all 0.3s;
+}
+.footer-a:hover{
+    border-bottom: 2px solid white;
+    transition: all 0.3s;
 }
 
 .invert{
