@@ -34,7 +34,8 @@
   background-color:var(--gris);
 }
 
-.lll{
+.pace-on{
+  transform: rotate(45deg);
   z-index:5000000;
   -webkit-animation: corazon-pace 2s infinite;
   animation: corazon-pace 2s infinite;
