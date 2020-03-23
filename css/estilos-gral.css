@@ -79,12 +79,10 @@ body{
     align-items: center;
     background-color: white;
     font-family: 'Trade Gothic 20 Condensed';
-    padding: 0px 5vw;
     font-size: 40px;
 }
 
 .img-before-feature{
-    width: 40vw;
     animation: corazon 1.5s infinite;
 }
 
@@ -611,22 +609,22 @@ body{
 
 @keyframes corazon {
     0% {
-        width: 40vw;
+        width: 30vw;
     }
     10%{
-        width: 42vw;
+        width: 32vw;
     }
     20%{
-        width: 38vw;
+        width: 28vw;
     }
     30%{
-        width: 42vw;
+        width: 32vw;
     }
     50%{
-        width: 40vw;
+        width: 30vw;
     }
     100% {    
-        width: 40vw;
+        width: 30vw;
     }
 }
 
