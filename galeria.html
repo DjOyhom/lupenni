@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="./css/estilos-niveles.css">
     <link rel="stylesheet" href="./css/estilos-galeria.css">
     <link rel="stylesheet" href="./css/estilos-menu.css">
+    <link rel="stylesheet" href="./css/animaciones.css">
 </head>
 <body>
     
-    <img class="lupenni-logo " id="logolupenni" src="./img/Grupo 5.png" alt="">
+    <img class="lupenni-logo " id="logolupenni" src="./img/Logo@2x.png" alt="">
     <div class="nav-icon " id="btnburger" onclick="menu()">
         <div></div>
     </div>
@@ -32,27 +33,27 @@
         </div>
     </section>
 
-    <section id="asd">
+    <section id="afterintro">
         <div class="galeria-fotos">
-            <img class="foto-1" src="./img/DSC_2267@2x.png" alt="">
-            <img class="foto-2" src="./img/DSC_1691@2x.png" alt="">
-            <img class="foto-3" src="./img/DSC_6017-ph@2x.png" alt="">
-            <img class="foto-4" src="./img/DSC_5276@2x.png" alt="">
-            <img class="foto-5" src="./img/DSC_5000@2x.png" alt="">
-            <img class="foto-6" src="./img/DSC_8258@2x.png" alt="">
-            <img class="foto-7" src="./img/DSC_2029-ph-3@2x.png" alt="">
-            <img class="foto-8" src="./img/DSC_6064@2x.png" alt="">
-            <img class="foto-9" src="./img/DSC_2349@2x.png" alt="">
-            <img class="foto-10" src="./img/DSC_6141@2x.png" alt="">
-            <img class="foto-11" src="./img/DSC_1398-3@2x.png" alt="">
-            <img class="foto-12" src="./img/DSC_0842@2x.png" alt="">
-            <img class="foto-13" src="./img/DSC_1189@2x.png" alt="">
+            <img id='galeriafoto1' class="foto-1" src="./img/DSC_2267@2x.png" alt="">
+            <img id='galeriafoto2' class="foto-2" src="./img/DSC_1691@2x.png" alt="">
+            <img id='galeriafoto3' class="foto-3" src="./img/DSC_6017-ph@2x.png" alt="">
+            <img id='galeriafoto4' class="foto-4" src="./img/DSC_5276@2x.png" alt="">
+            <img id='galeriafoto5' class="foto-5" src="./img/DSC_5000@2x.png" alt="">
+            <img id='galeriafoto6' class="foto-6" src="./img/DSC_8258@2x.png" alt="">
+            <img id='galeriafoto7' class="foto-7" src="./img/DSC_2029-ph-3@2x.png" alt="">
+            <img id='galeriafoto8' class="foto-8" src="./img/DSC_6064@2x.png" alt="">
+            <img id='galeriafoto9' class="foto-9" src="./img/DSC_2349@2x.png" alt="">
+            <img id='galeriafoto10' class="foto-10" src="./img/DSC_6141@2x.png" alt="">
+            <img id='galeriafoto11' class="foto-11" src="./img/DSC_1398-3@2x.png" alt="">
+            <img id='galeriafoto12' class="foto-12" src="./img/DSC_0842@2x.png" alt="">
+            <img id='galeriafoto13' class="foto-13" src="./img/DSC_1189@2x.png" alt="">
         </div>
     </section>
 
     <section>
         <div class="contacto">
-            <h1  class="margin-cero">Contacto</h1>
+            <h1 class="margin-cero contacto-h1">Contacto</h1>
             <div class="contacto-center">
                 <div class="omrs-input-group w45">
                     <label class="omrs-input-underlined">
@@ -89,25 +90,34 @@
                     </label>
                 </div>
             </div>
-            <div class="contacto-center">
-                <button>Enviar</button>     
-                <h3 style="margin: 0px 30px;border-bottom: 20px solid red; height: 10px; font-size: 20px; padding: 0px 5px;" >Pinceles Profesionales</h3>
-                <h3 style="margin: 0px 30px;border-bottom: 20px solid red; width: 250px; height: 10px; font-size: 20px; padding-left: 20px;" >Pinceles Profesionales</h3>
+            <div class="contacto-center-btn">
+                <div class="contacto-btn-div">
+                    <button class="btn-enviar-contacto">Enviar</button>     
+                </div>
+                <div class="contacto-info-div">
+                    <h3 class="contacto-info">094 092 463</h3>
+                    <h3 class="contacto-info">hola@lupenni.com</h3>
+                </div>
            
             </div>
         </div>
     </section>
 
     <section>
-        <div class="frase">
-            <h2 class="margin-cero">"El maquillaje es arte en movimiento" - Lucia Pennino</h2>
+        <div class="frase-contacto">
+            <div class="frase-after-contacto">
+                <h2 class="margin-cero h2-frase-after-contacto">¿Necesitas mas información?</h2>
+                <button class="btn-enviar-contacto">Habla conmigo</button>  
+            </div>
         </div>
     </section>
 
     
     <section>
         <div class="footer">
-            <h2 class="margin-cero">"El maquillaje es arte en movimiento" - Lucia Pennino</h2>
+            <h2 class="margin-cero footer-h2">Lupenni 2020 © Todos los derechos reservados. <br>
+                <a class="footer-a" href=""> Designed by 
+                 OCEDOT</a></h2>
         </div>
     </section>
 
@@ -119,13 +129,13 @@
             <br>
             <br>
             <a href="index.html" class="menu-item">Inicio</a><br>
-            <a id="programamenu" class="menu-item">Programa</a><br>
+            <a href="index.html#programa" class="menu-item">Programa</a><br>
             <a href="contacto.html" class="menu-item">Contacto</a><br>
             <a href="galeria.html" class="menu-item">Galeria</a><br>
             <a href="index.html" class="menu-item">Empresas amigas</a><br>
             <br><br>
-            <a href="" class="menu-item">094 092 463</a><br>
-            <a href="" class="menu-item">hola@lupenni.com</a><br>
+            <a href="" class="menu-item-invert">094 092 463</a><br>
+            <a href="" class="menu-item-invert">hola@lupenni.com</a><br>
             <div class="insta-menu-div"> 
                 <img src="./img/Grupo 12@2x.png" alt="" class="insta-menu-img">
                 <a class="insta-menu-text" href="">Lupenni.studio</a>
@@ -134,20 +144,7 @@
     </div>
 
 
-    <script>
-        document.onscroll = function(){
-            var top  = window.pageYOffset || document.documentElement.scrollTop;
-            var img1 = asd.offsetTop;
-            if (top >= img1 - 30) {
-                document.getElementById('logolupenni').classList.add('invert');
-                document.getElementById('btnburger').classList.add('invert');
-            }else{
-                document.getElementById('logolupenni').classList.remove('invert');
-                document.getElementById('btnburger').classList.remove('invert');
-            }
-
-        }
-    </script>
+    <script src="./js/animaciones.js "></script>
     <script src="./js/menu.js "></script>
 
 </body>

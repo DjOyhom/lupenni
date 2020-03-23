@@ -3,8 +3,8 @@ body{
 }
 
 .galeria-intro{
-    height: 80vh;
-    border-top: 10vh solid var(--gris);
+    height: 70vh;
+    border-top: 20vh solid var(--gris);
     border-right: 5vw solid var(--gris);
     border-bottom: 30vh solid var(--gris);
     border-left: 5vw solid var(--gris);
@@ -44,6 +44,7 @@ body{
   width: 90vw;
   height: 50vh;
   padding-left: 5vw;
+  opacity: 0;
 }
 
 .foto-2{
@@ -52,6 +53,7 @@ body{
   width: 40vw;
   height: 50vh;
   left: 5vw;
+  opacity: 0;
 }
 
 .foto-3{
@@ -59,6 +61,7 @@ body{
   top: 200vh;
   width: 30vw;
   left: 65vw;
+  opacity: 0;
 }
 
 .foto-4{
@@ -67,6 +70,7 @@ body{
   width: 45vw;
   height: 60vh;
   left: 15vw;
+  opacity: 0;
 }
 
 .foto-5{
@@ -75,6 +79,7 @@ body{
   width: 30vw;
   height: 90vh;
   left: 5vw;
+  opacity: 0;
 }
 
 .foto-6{
@@ -83,6 +88,7 @@ body{
   width: 50vw;
   height: 130vh;
   left: 40vw;
+  opacity: 0;
 }
 
 .foto-7{
@@ -91,6 +97,7 @@ body{
   width: 70vw;
   height: 80vh;
   left: 15vw;
+  opacity: 0;
 }
 
 .foto-8{
@@ -99,6 +106,7 @@ body{
   width: 50vw;
   left: 5vw;
   height: 180vh;
+  opacity: 0;
 }
 
 .foto-9{
@@ -107,6 +115,7 @@ body{
   width: 35vw;
   left: 60vw;
   height: 50vh;
+  opacity: 0;
 }
 
 .foto-10{
@@ -115,6 +124,7 @@ body{
   width: 35vw;
   height: 110vh;
   left: 60vw;
+  opacity: 0;
 }
 
 .foto-11{
@@ -123,6 +133,7 @@ body{
   width: 90vw;
   left: 5vw;
   height: 130vh;
+  opacity: 0;
 }
 
 .foto-12{
@@ -131,6 +142,7 @@ body{
   width: 45vw;
   left: 5vw;
   height: 110vh;
+  opacity: 0;
 }
 
 .foto-13{
@@ -139,4 +151,5 @@ body{
   width: 40vw;
   left: 55vw;
   height: 130vh;
+  opacity: 0;
 }

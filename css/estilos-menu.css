@@ -36,10 +36,11 @@
 }
 
 .menu-item{
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 40px;
     border-bottom: 20px solid var(--azul); 
-    height: 10px; 
-    font-size: 20px; 
-    padding: 0px 10px 0px 5px; 
+    height: 30px; 
+    padding: 20px 10px 0px 5px; 
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -49,6 +50,29 @@
 
 .menu-item:hover{
     animation: border-violeta 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.insta-menu-text{
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 20px;
+}
+
+.menu-item-invert{
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 30px;
+    border-bottom: 15px solid var(--violeta); 
+    height: 20px; 
+    padding: 20px 10px 0px 5px; 
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    animation: border-violeta 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.menu-item-invert:hover{
+    animation: border-azul 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -104,8 +128,4 @@
   
 .nav-icon2 div {
     transform: scale(0);
-}
-
-.logo-menu{
-
 }

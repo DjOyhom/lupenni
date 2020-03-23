@@ -17,11 +17,24 @@ function menu(){
     }
 }
 
+function move(){
+    var loc = window.location.toString().split("#")[1];
+    if (loc == "programa") {
+        var pro = programa.offsetTop;
+        scrollTo(document.documentElement, pro, 1250);   
+    }
+}
 
 document.getElementById('programamenu').onclick = function () {
     menu();
-    var pro = divprograma.offsetTop;
+    var pro = programa.offsetTop;
     scrollTo(document.documentElement, pro, 1250);   
+}
+
+document.getElementById('iniciomenu').onclick = function () {
+    menu();
+    var header = document.getElementById('header').offsetTop;
+    scrollTo(document.documentElement, header, 1250);   
 }
     
 function scrollTo(element, to, duration) {

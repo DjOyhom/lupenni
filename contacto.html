@@ -11,17 +11,16 @@
     <link rel="stylesheet" href="./css/estilos-xs.css">
     <link rel="stylesheet" href="./css/estilos-gral.css">
     <link rel="stylesheet" href="./css/estilos-input-contacto.css">
-    <link rel="stylesheet" href="./css/estilos-contacto.css">
     <link rel="stylesheet" href="./css/estilos-niveles.css">
+    <link rel="stylesheet" href="./css/estilos-menu.css">
+    <link rel="stylesheet" href="./css/estilos-contacto.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav">
-            <div class="navbar">
-                <img src="" alt="">
-                <img src="./img/3.png" onclick="abrirMenu()" style="position: fixed;" id="btn-menu" alt="">
-            </div>
-        </nav>
+
+    <img class="lupenni-logo " id="logolupenni" src="./img/Logo@2x.png" alt="">
+    <div class="nav-icon " id="btnburger" onclick="menu()">
+        <div></div>
+    </div>
 
         <div class="div-header-txt">
             <h1 class="header-txt">
@@ -33,7 +32,7 @@
         </div>
     </header>
 
-    <section>
+    <section id="afterintro">
         <div class="about-me">
 
         </div>
@@ -41,7 +40,7 @@
 
     <section>
         <div class="contacto">
-            <h1  class="margin-cero">Contacto</h1>
+            <h1 class="margin-cero contacto-h1">Contacto</h1>
             <div class="contacto-center">
                 <div class="omrs-input-group w45">
                     <label class="omrs-input-underlined">
@@ -78,26 +77,63 @@
                     </label>
                 </div>
             </div>
-            <div class="contacto-center">
-                <button>Enviar</button>     
-                <h3 style="margin: 0px 30px;border-bottom: 20px solid red; height: 10px; font-size: 20px; padding: 0px 5px;" >Pinceles Profesionales</h3>
-                <h3 style="margin: 0px 30px;border-bottom: 20px solid red; width: 250px; height: 10px; font-size: 20px; padding-left: 20px;" >Pinceles Profesionales</h3>
+            <div class="contacto-center-btn">
+                <div class="contacto-btn-div">
+                    <button class="btn-enviar-contacto">Enviar</button>     
+                </div>
+                <div class="contacto-info-div">
+                    <h3 class="contacto-info">094 092 463</h3>
+                    <h3 class="contacto-info">hola@lupenni.com</h3>
+                </div>
            
             </div>
         </div>
     </section>
 
     <section>
-        <div class="frase">
-            <h2 class="margin-cero">"El maquillaje es arte en movimiento" - Lucia Pennino</h2>
+        <div class="frase-contacto">
+            <div class="frase-after-contacto">
+                <h2 class="margin-cero h2-frase-after-contacto">¿Te interesa?</h2>
+                <button class="btn-enviar-contacto">¡Vamos!</button>  
+            </div>
         </div>
     </section>
 
     
     <section>
         <div class="footer">
-            <h2 class="margin-cero">"El maquillaje es arte en movimiento" - Lucia Pennino</h2>
+            <h2 class="margin-cero footer-h2">Lupenni 2020 © Todos los derechos reservados. <br>
+                <a class="footer-a" href=""> Designed by 
+                 OCEDOT</a></h2>
         </div>
     </section>
+
+
+
+    <div id="menu" class="menu">
+        <div class="menu-foto"></div>
+        <div class="menu-items">
+            <img src="./img/Logo.png" class="logo-menu" alt=""><br>
+            <br>
+            <br>
+            <a href="index.html" class="menu-item">Inicio</a><br>
+            <a href="index.html#programa" class="menu-item">Programa</a><br>
+            <a href="contacto.html" class="menu-item">Contacto</a><br>
+            <a href="galeria.html" class="menu-item">Galeria</a><br>
+            <a href="index.html" class="menu-item">Empresas amigas</a><br>
+            <br><br>
+            <a href="" class="menu-item-invert">094 092 463</a><br>
+            <a href="" class="menu-item-invert">hola@lupenni.com</a><br>
+            <div class="insta-menu-div"> 
+                <img src="./img/Grupo 12@2x.png" alt="" class="insta-menu-img">
+                <a class="insta-menu-text" href="">Lupenni.studio</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/menu.js "></script>
+    <script src="./js/animaciones.js "></script>
+
 </body>
 </html>

@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="./css/estilos-input-contacto.css">
     <link rel="stylesheet" href="./css/estilos-niveles.css">
     <link rel="stylesheet" href="./css/estilos-menu.css">
+    <link rel="stylesheet" href="./css/animaciones.css">
 </head>
-<body>
+<body onload="move()">
     
     <img class="lupenni-logo " id="logolupenni" src="./img/Logo@2x.png" alt="">
     <div class="nav-icon " id="btnburger" onclick="menu()">
@@ -22,7 +23,7 @@
     </div>
 
     <header class="header">
-        <div class="div-header-txt">
+        <div id="header" class="div-header-txt">
             <h1 class="header-txt">
                 En <br>
                 Lo alto <br>
@@ -33,7 +34,7 @@
     </header>
 
     <section>
-        <div class="before-feature" id="asd">
+        <div class="before-feature" id="afterintro">
             <div>
                 <h2 style="text-align: right;">Escuela de Maquillaje</h2>
             </div>
@@ -113,11 +114,11 @@
 
     <div class="galeria">
         <div class="galeria-flex">
-            <img class="galeria-img-1" src="./img/DSC_6233.png" alt="">
+            <img id="indexfoto1" class="galeria-img-1" src="./img/DSC_6233.png" alt="">
             <div>
                 <div class="relleno"></div>
-                <img class="galeria-img-2" src="./img/DSC_2349.png" alt="">
-                <img class="galeria-img-3" src="./img/DSC_1518.png" alt="">
+                <img id="indexfoto2" class="galeria-img-2" src="./img/DSC_2349.png" alt="">
+                <img id="indexfoto3" class="galeria-img-3" src="./img/DSC_1518.png" alt="">
             </div>
         </div>
     </div>
@@ -137,7 +138,7 @@
     </section>
 
     <section>
-        <div class="programa" id="divprograma">
+        <div class="programa" id="programa">
             <h1 class="programa-h1 margin-cero">Programa</h1>
             <div class="program">
                 <button class="collapsible program-1-title"><div class="program-1-title-img"></div>Nivel 1</button>
@@ -247,14 +248,14 @@
             <img src="./img/Logo.png" class="logo-menu" alt=""><br>
             <br>
             <br>
-            <a href="index.html" class="menu-item">Inicio</a><br>
+            <a id="iniciomenu"class="menu-item">Inicio</a><br>
             <a id="programamenu" class="menu-item">Programa</a><br>
             <a href="contacto.html" class="menu-item">Contacto</a><br>
             <a href="galeria.html" class="menu-item">Galeria</a><br>
             <a href="index.html" class="menu-item">Empresas amigas</a><br>
             <br><br>
-            <a href="" class="menu-item">094 092 463</a><br>
-            <a href="" class="menu-item">hola@lupenni.com</a><br>
+            <a href="" class="menu-item-invert">094 092 463</a><br>
+            <a href="" class="menu-item-invert">hola@lupenni.com</a><br>
             <div class="insta-menu-div"> 
                 <img src="./img/Grupo 12@2x.png" alt="" class="insta-menu-img">
                 <a class="insta-menu-text" href="">Lupenni.studio</a>
@@ -262,24 +263,9 @@
         </div>
     </div>
 
-    <script>
-        document.onscroll = function(){
-            var top  = window.pageYOffset || document.documentElement.scrollTop;
-            var img1 = asd.offsetTop;
-            if (top >= img1 - 30) {
-                document.getElementById('logolupenni').classList.add('invert');
-                document.getElementById('btnburger').classList.add('invert');
-            }else{
-                document.getElementById('logolupenni').classList.remove('invert');
-                document.getElementById('btnburger').classList.remove('invert');
-            }
-
-        }
-    </script>
-
-
-    <script src="./js/nieveles.js "></script>
-    <script src="./js/menu.js "></script>
+<script src="./js/nieveles.js "></script>
+<script src="./js/animaciones.js "></script>
+<script src="./js/menu.js "></script>
 
 </body>
 </html>
