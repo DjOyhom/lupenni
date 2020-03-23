@@ -622,3 +622,30 @@ body{
         width: 40vw;
     }
 }
+
+@keyframes corazon-pace {
+    0% {
+        width: 40vw;
+        filter:drop-shadow(0px 0px 5px var(--violeta));
+    }
+    10%{
+        width: 42vw;
+        filter:drop-shadow(0px 0px 15px var(--azul));
+    }
+    20%{
+        width: 38vw;
+        filter:drop-shadow(0px 0px 5px var(--violeta));
+    }
+    30%{
+        width: 42vw;
+        filter:drop-shadow(0px 0px 15px var(--azul));
+    }
+    50%{
+        width: 40vw;
+        filter:drop-shadow(0px 0px 5px var(--violeta));
+    }
+    100% {    
+        width: 40vw;
+        filter:drop-shadow(0px 0px 15px var(--azul));
+    }
+}
