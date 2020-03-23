@@ -25,17 +25,37 @@ function move(){
     }
 }
 
-document.getElementById('programamenu').onclick = function () {
-    menu();
-    var pro = programa.offsetTop;
-    scrollTo(document.documentElement, pro, 1250);   
+try {
+
+    document.onkeydown = function(evt) {
+        if (menu_open) {
+            evt = evt || window.event;
+            if (evt.keyCode == 27) {
+                var menu = document.getElementById('menu');
+                menu.classList.remove('menu-fade-in');
+                menu.classList.add("menu-fade-out");
+                menu_open = false;
+                var btn = document.getElementById('btnburger');
+                btn.classList.remove("nav-icon2");
+            }
+        }
+    };
+
+    document.getElementById('programamenu').onclick = function () {
+        menu();
+        var pro = programa.offsetTop;
+        scrollTo(document.documentElement, pro, 1250);   
+    }
+    
+    document.getElementById('iniciomenu').onclick = function () {
+        menu();
+        var header = document.getElementById('header').offsetTop;
+        scrollTo(document.documentElement, header, 1250);   
+    }    
+} catch (error) {
+    
 }
 
-document.getElementById('iniciomenu').onclick = function () {
-    menu();
-    var header = document.getElementById('header').offsetTop;
-    scrollTo(document.documentElement, header, 1250);   
-}
     
 function scrollTo(element, to, duration) {
     var start = element.scrollTop,
