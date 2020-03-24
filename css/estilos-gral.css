@@ -237,37 +237,31 @@ body{
 
 /* ******************************************************************************************************* */
 .galeria{
-   background:  linear-gradient(180deg, white 30%, var(--gris) 30%);    
-   background-position: 0% 10%;
+   background:  linear-gradient(180deg, white 30%, var(--gris) 30%);  
+   padding-top: 100px;  
 }
 
 .galeria-flex{
     display: inline-flex;
     justify-content: left;
     align-items: center;
-}
-
-.relleno{
-    width: 100%;
-    height: 100px;
+    padding:0px 5%;
 }
 
 .galeria-img-1{
-    width: 30vw;
-    margin: 5vw;
+    width: 35%;
+    padding-right: 5%;
     opacity: 0;
 }
 
 .galeria-img-2{
-    width: 90%;
-    padding: 0px 0px 10vh 0px;
-    height: 75vh;
+    width: 100%;
     opacity: 0;
 }
 
 .galeria-img-3{   
-    width: 90%;
-    height: 75vh;
+    padding-top: 100px;
+    width: 100%;
     opacity: 0;
 }
 
