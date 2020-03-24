@@ -38,18 +38,17 @@
 
     <section>
         <div class="before-feature" id="afterintro">
-            <div style="width: 23vw; display: flex; justify-content: center; align-items: center;">
-                <h2 style="text-align: right; padding-top: 100px;line-height:90px; ">Escuela de Maquillaje</h2>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <h2 style="text-align: right; padding-top: 100px;line-height:90px; width: 24vw; ">Escuela de Maquillaje</h2>
             </div>
 
-            <div style="width: 34vw; display: flex; justify-content: center; align-items: center;">
+            <div style="width: 32vw; display: flex; justify-content: center; align-items: center;">
                 <img class="img-before-feature" src="./img/Trazado 39@2x.png" alt="">
             </div>
 
-            <div style="width: 23vw; margin-right: 10vw; display: flex; justify-content: center; align-items: center;">
-                <h2 style="margin-right:5vw;text-align: left; padding-top: 100px;line-height: 90px; ">Maquillaje profesional</h2>
+            <div style="width: 24vw;display: flex; justify-content: center; align-items: center;">
+                <h2 style="text-align: left; padding-top: 100px;padding-left: 15px; line-height: 90px; ">Maquillaje profesional</h2>
             </div>
-
         </div>
     </section>
 
@@ -223,8 +222,8 @@
                     <button class="btn-enviar-contacto">Enviar</button>     
                 </div>
                 <div class="contacto-info-div">
-                    <h3 class="contacto-info">094 092 463</h3>
-                    <h3 class="contacto-info">hola@lupenni.com</h3>
+                    <a href="tel:+59894092463" class="contacto-info">094 092 463</a>
+                    <a href="mailto:hola@lupenni.com" class="contacto-info">hola@lupenni.com</a>
                 </div>
            
             </div>
@@ -266,18 +265,27 @@
             <a href="galeria.html" class="menu-item">Galeria</a><br>
             <a href="index.html" class="menu-item">Empresas amigas</a><br>
             <br><br>
-            <a href="" class="menu-item-invert">094 092 463</a><br>
-            <a href="" class="menu-item-invert">hola@lupenni.com</a><br>
-            <div class="insta-menu-div"> 
-                <img src="./img/Grupo 12@2x.png" alt="" class="insta-menu-img">
-                <a class="insta-menu-text" href="">Lupenni.studio</a>
+            <a href="tel:+59894092463" class="menu-item-invert">094 092 463</a><br>
+            <a href="mailto:hola@lupenni.com" class="menu-item-invert">hola@lupenni.com</a><br>
+            <div class="insta-menu-div" onmouseover="instamenuazul()" onmouseout="instamenu()"> 
+                <div class="insta-menu-img" id="divmenuinsta"></div>
+                <a class="insta-menu-text" href="http://instagram.com/lupenni.studio">Lupenni.studio</a>
             </div>
         </div>
     </div>
 
-<script src="./js/nieveles.js "></script>
-<script src="./js/animaciones.js "></script>
-<script src="./js/menu.js "></script>
+    <script src="./js/nieveles.js "></script>
+    <script src="./js/animaciones.js "></script>
+    <script src="./js/menu.js "></script>
+
+    <script>
+        function instamenuazul(){
+            document.getElementById('divmenuinsta').classList.add("insta-menu-img-azul");
+        }
+        function instamenu(){
+            document.getElementById('divmenuinsta').classList.remove("insta-menu-img-azul");
+        }
+    </script>
 
 </body>
 </html>

@@ -39,9 +39,27 @@ body{
 }
 
 .insta-menu-img{
+    background-image: url('../img/Grupo 12-v@2x.png');
     height: 30px;
-    padding-right: 10px;
+    width: 30px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
 }
+
+.insta-menu-img-azul{
+    background-image: url('../img/Grupo 12@2x.png');
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
 
 .insta-menu-text{
     text-decoration: none;
@@ -467,6 +485,7 @@ body{
     font-size: 60px !important;
     animation: violeta-margin 0.3s;
     animation-fill-mode: forwards;
+    text-decoration: none;
 }
 
 .contacto-info:hover{
