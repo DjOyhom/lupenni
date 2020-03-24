@@ -73,13 +73,13 @@ body{
 /* ******************************************************************************************************* */
 
 .before-feature{
-    height: 800px;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
     font-family: 'Trade Gothic 20 Condensed';
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .img-before-feature{
@@ -115,7 +115,7 @@ body{
     height: 10vw; 
     border-top: 50px solid white;
     border-left: 5vw solid white;
-    border-right: 5vw solid white;
+    border-right: 2vw solid white;
     border-bottom: 50px solid white;
 }
 
@@ -123,12 +123,12 @@ body{
     width: 10vw; 
     height: 10vw; 
     border-top: 50px solid white;
-    border-right: 5vw solid white;
+    border-right: 2vw solid white;
     border-bottom: 50px solid white;
 }
 
 .feature-tabla-row-div{
-    width: 30vw; 
+    width: 33vw; 
     background-color: white; 
     height: 10vw; 
     border-bottom: 50px solid white; 
