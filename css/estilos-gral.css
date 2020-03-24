@@ -558,6 +558,9 @@ body{
     height: 500px;
     width: 100%;
     background-image: url('../img/frase-after-contacto.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
 }
