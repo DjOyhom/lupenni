@@ -1,8 +1,8 @@
 :root {
     --violeta: #b05cab;
     --azul: #056b87;
-    --violeta-rgba: rgba(176,92,171,0.7);
-    --azul-rgba: rgba(5,107,135,0.7);
+    --violeta-rgba: rgba(176,92,171,0.4);
+    --azul-rgba: rgba(5,107,135,0.4);
     --gris: #333;
     --intermedio-feature: rgba(114,98,158,0.5);
     --azul-feature: rgba(61,102,147,0.5);
@@ -14,12 +14,19 @@ body{
     overflow-x: hidden;
 }
 
+.video-index{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .margin-cero{
     margin: 0;
 }
 
 .header{
-    background-image: url('../img/DSC_-1@2x.png');
     height: 110vh;
 }
 
@@ -83,6 +90,7 @@ body{
     margin: 0px;
     height: 110vh;
     padding: 8% 5% 0% 5%; 
+    z-index: 20;
     background: linear-gradient(to right,var(--violeta-rgba), var(--azul-rgba));
 }
 
