@@ -278,6 +278,7 @@ body{
 .after-galeria{
     padding-top: 100px;
     background-color: #333;
+    padding-bottom: 15vh;
 }
 
 .after-galeria-h1{
@@ -348,12 +349,12 @@ body{
     align-items: center;
     color: white;
     font-family: 'Trade Gothic 20 Condensed';
-    font-size: 60px !important;
+    font-size: 45px !important;
 }
 
 .program-1-title-img{
-    width: 180px;
-    height: 130px;
+    width: 95px;
+    height: 95px;
     margin-right: 2%;
     background-image: url('../img/Grupo 23@2x.png');
     background-position: center;
@@ -389,7 +390,7 @@ body{
     font-size: 30px !important;
     height: 150px;
     width: 100%;
-    background: linear-gradient(to right, var(--violeta), var(--azul));
+    background: linear-gradient(145deg, var(--azul), var(--violeta));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -402,7 +403,7 @@ body{
 .contacto{
     background-color: var(--gris);
     color: white;
-    padding: 100px 5vw;
+    padding: 100px 5vw 200px 5vw;
 }
 
 .contacto-h1{
@@ -467,21 +468,20 @@ body{
 }
 
 .contacto-btn-div{
-    width: 20%;
+    width: 55vw;
 }
 .contacto-info-div{
-    width: 80%;
+    width: 45vw;
 }
 
 .contacto-info{
-    margin: 0px 30px; 
+    margin: 0px 0px 0px 40px; 
     float: right; 
-    border-bottom: 30px solid var(--violeta); 
-    height: 40px;
+    height: 25px;
     padding:0px 20px;
     color: white;
     font-family: 'Trade Gothic 20 Condensed';
-    font-size: 60px !important;
+    font-size: 40px !important;
     animation: violeta-margin 0.3s;
     animation-fill-mode: forwards;
     text-decoration: none;
@@ -495,19 +495,19 @@ body{
 
 @keyframes azul-margin {
     0% {
-        border-bottom: 30px solid var(--violeta); 
+        border-bottom: 25px solid var(--violeta); 
     }
     100% {    
-        border-bottom: 30px solid var(--azul); 
+        border-bottom: 25px solid var(--azul); 
     }
 }
 
 @keyframes violeta-margin {
     0% {    
-        border-bottom: 30px solid var(--azul); 
+        border-bottom: 25px solid var(--azul); 
     }
     100% {
-        border-bottom: 30px solid var(--violeta); 
+        border-bottom: 25px solid var(--violeta); 
     }
 }
 
@@ -557,7 +557,7 @@ body{
     color: white;
     height: 500px;
     width: 100%;
-    background: linear-gradient(50deg, var(--violeta), var(--azul));
+    background-image: url('../img/frase-after-contacto.png');
     display: flex;
     align-items: center;
 }

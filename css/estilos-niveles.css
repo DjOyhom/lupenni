@@ -17,7 +17,9 @@
   
   .content{
     color: white;
-    border: 50px solid var(--gris);
+    border-top: 30px solid var(--gris);
+    border-bottom: 15px solid var(--gris);
+    border-left: 95px solid var(--gris);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
