@@ -119,6 +119,7 @@ body{
 
 .feature-tabla{
     border-bottom: 100px solid white;
+    border-left: 5vw solid white;
 }
 
 .feature-tabla-row{
@@ -131,26 +132,26 @@ body{
 .feature-tabla-row-img-left{
     width: 10vw; 
     height: 10vw; 
-    border-top: 50px solid white;
-    border-left: 5vw solid white;
+    border-top: 20px solid white;
+    border-left: 0vw solid white;
     border-right: 2vw solid white;
-    border-bottom: 50px solid white;
+    border-bottom: 0px solid white;
 }
 
 .feature-tabla-row-img-right{
     width: 10vw; 
     height: 10vw; 
-    border-top: 50px solid white;
+    border-top: 20px solid white;
     border-right: 2vw solid white;
-    border-bottom: 50px solid white;
+    border-bottom: 0px solid white;
 }
 
 .feature-tabla-row-div{
     width: 33vw; 
     background-color: white; 
     height: 10vw; 
-    border-bottom: 50px solid white; 
-    border-top: 50px solid white;
+    border-bottom: 0px solid white; 
+    border-top: 20px solid white;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -287,7 +288,6 @@ body{
     font-family: 'Trade Gothic 20 Condensed';
     line-height: 180px;
     font-size: 180px;
-    padding-bottom: 5vh;
 }
 
 .after-galeria-tabla{
@@ -301,7 +301,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
     width: 60vw;
     background-color: var(--gris);
     color: white;
@@ -314,14 +313,14 @@ body{
 
 .after-galeria-div-img{
     background-color: var(--gris);
-    width: 40vw;
+    width: 30vw;
+    margin-right: 5vw;
     /* animation: corazon 1.5s infinite; */
 
 }
 
 .after-galeria-img{
-    width: 80%;
-    padding-left: 10%;
+    width: 100%;
 }
 
 /* ******************************************************************************************************* */
