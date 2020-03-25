@@ -128,11 +128,11 @@
 }
 
 .nav-icon2:before {
-    transform: translateY(12px) rotate(135deg);
+    transform: translateY(11px) rotate(135deg);
 }
   
 .nav-icon2:after {
-    transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-11px) rotate(-135deg);
 }
   
 .nav-icon2 div {
