@@ -119,6 +119,7 @@ body{
     bottom: 25px;
     color: white;
     font-size: 9em;
+    font-weight: normal;
     font-family: 'Trade Gothic 20 Condensed';
     margin: 0px;
     z-index: 200;
