@@ -27,7 +27,9 @@
         left: 25px !important;
     }
 
-
+    .before-feature{
+        display: inline-block !important;
+    }
 
 
 
