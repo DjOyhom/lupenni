@@ -32,7 +32,7 @@
 
 body{
     margin:0px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 
 .video-index{
@@ -44,11 +44,9 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 110vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 .margin-cero{
@@ -56,7 +54,7 @@ body{
 }
 
 .header{
-    height: 110vh;
+    height: 100%;
 }
 
 .logo-lu-div{
@@ -117,13 +115,13 @@ body{
 
 .div-header-txt{
     position:relative;
-    height: 110vh;
+    height: 100vh;
 }
 
 .header-txt{
     position:absolute;
     left: 75px;
-    bottom:100px;
+    bottom: 25px;
     color: white;
     font-size: 160px;
     line-height: 160px;
