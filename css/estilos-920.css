@@ -16,6 +16,14 @@
         height: 4px !important;
     }
 
+    .nav-icon2:before {
+        transform: translateY(10px) rotate(135deg) !important;
+    }
+      
+    .nav-icon2:after {
+        transform: translateY(-10px) rotate(-135deg) !important;
+    }
+      
     .header-txt{
         left: 50px !important;
         font-size: 110px !important;
