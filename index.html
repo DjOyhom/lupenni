@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lupenni</title>
     <link rel="stylesheet" href="./css/fuentes.css">
-    <link rel="stylesheet" href="./css/estilos-lg.css">
-    <link rel="stylesheet" href="./css/estilos-md.css">
+    <link rel="stylesheet" href="./css/estilos-920.css">
+    <link rel="stylesheet" href="./css/estilos-650.css">
     <link rel="stylesheet" href="./css/estilos-sm.css">
     <link rel="stylesheet" href="./css/estilos-xs.css">
     <link rel="stylesheet" href="./css/estilos-gral.css">
@@ -20,16 +20,24 @@
 </head>
 <body onload="move()">
     
-    <img class="lupenni-logo " id="logolupenni" src="./img/Logo@2x.png" alt="">
+    <div style="position: fixed; width: 100%; z-index: 500 !important;" id="logolupenni">
+        <div class="logo-lu-div">
+            <img class="lupenni-logo "  src="./img/Logo@2x.png" alt="">
+        </div>
+    </div>
+
     <div class="nav-icon " id="btnburger" onclick="menu()">
         <div></div>
     </div>
     
-    <header class="header">
+    <div class="video-div"> 
         <video autoplay muted loop class="video-index">
             <source src="./video/Estudio Lu Penni WP.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
+    </div>
+
+    <header class="header">
         <div id="header" class="div-header-txt">
             <h1 class="header-txt">
                 En <br>
@@ -296,6 +304,10 @@
             </div>
         </div>
     </div>
+
+    <div class="btn-up" id="up"></div>
+
+    <div class="test"></div>
 
     <script src="./js/nieveles.js "></script>
     <script src="./js/animaciones.js "></script>

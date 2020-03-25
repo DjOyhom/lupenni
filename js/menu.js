@@ -47,6 +47,10 @@ try {
         scrollTo(document.documentElement, pro, 1250);   
     }
     
+    document.getElementById('up').onclick = function () {
+        scrollTo(document.documentElement, 0, 1250);   
+    }
+
     document.getElementById('iniciomenu').onclick = function () {
         menu();
         var header = document.getElementById('header').offsetTop;

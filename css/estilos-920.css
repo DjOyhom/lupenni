@@ -1,0 +1,48 @@
+@media screen and (max-width: 920px) and (min-width: 651px){
+
+    /* .lupenni-logo{
+        left: 37.5% !important;
+        width: 11% !important;
+    } */
+
+    .nav-icon {
+        width: 35px !important;
+        z-index: 30000 !important;
+    }
+
+    .nav-icon:after, 
+    .nav-icon:before, 
+    .nav-icon div {
+        height: 4px !important;
+    }
+
+    .header-txt{
+        left: 50px !important;
+        font-size: 110px !important;
+        line-height: 110px !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

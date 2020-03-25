@@ -84,16 +84,19 @@ document.onscroll = function(){
         
     }
     
-
-
+    
+//btn-UP----------------------------
 // logo lupenni----------------------
-    var top  = window.pageYOffset || document.documentElement.scrollTop;
     var img1 = document.getElementById('afterintro').offsetTop;
     if (top >= img1 - 30) {
         document.getElementById('logolupenni').classList.add('invert');
         document.getElementById('btnburger').classList.add('invert');
+        document.getElementById('up').classList.add('fade-btn-up-in');
+        
     }else{
         document.getElementById('logolupenni').classList.remove('invert');
         document.getElementById('btnburger').classList.remove('invert');
+        document.getElementById('up').classList.remove('fade-btn-up-in');
+        
     }
 };
