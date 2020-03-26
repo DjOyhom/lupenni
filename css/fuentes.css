@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Trade Gothic 18 Condensed';
+    src: url('../fonts/Trade-Gothic-LT-Std-Condensed-No--18.ttf');
+}
+
+@font-face {
+    font-family: 'Trade Gothic 20 Condensed';
+    src: url('../fonts/Trade-Gothic-LT-Std-Bold-Condensed-No--20_45184.ttf');
+}
+
+@font-face {
+    font-family: 'Trade Gothic Italic';
+    src: url('../fonts/Trade\ Gothic\ LT\ Oblique.ttf');
+}
+
+@font-face {
+    font-family: 'Trade Gothic Bold Italic';
+    src: url('../fonts/Trade\ Gothic\ LT\ Bold.ttf');
+}
+
+  

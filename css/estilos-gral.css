@@ -1,0 +1,718 @@
+:root {
+    --violeta: #b05cab;
+    --azul: #056b87;
+    --violeta-rgba: rgba(176,92,171,0.4);
+    --azul-rgba: rgba(5,107,135,0.4);
+    --gris: #333;
+    --intermedio-feature: rgba(114,98,158,0.5);
+    --azul-feature: rgba(61,102,147,0.5);
+    --violeta-feature: rgba(169,93,170,0.5);
+}
+
+.btn-up{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-image: url('../img/Grupo 21@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+    /* filter:drop-shadow(0px 0px 3px var(--gris)); */
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.fade-btn-up-in{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+body{
+    margin:0px;
+    /* overflow-x: hidden; */
+}
+
+.video-index{
+    position: absolute;
+    min-width: 102%;
+    min-height: 100%;
+    top: 50%;
+    left: 49%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.margin-cero{
+    margin: 0;
+}
+
+.header{
+    height: 100%;
+}
+
+.logo-lu-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding-top: 30px;
+}
+
+.lupenni-logo{
+    width: 170px;
+}
+
+.insta-menu-div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.insta-menu-img{
+    background-image: url('../img/Grupo 12-v@2x.png');
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.insta-menu-img-azul{
+    background-image: url('../img/Grupo 12@2x.png');
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+
+.insta-menu-text{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+
+.boton-hambur{
+    position: fixed;
+    top: 30px;
+    left: 90%;
+    width: 10%; 
+}
+
+.div-header-txt{
+    position:relative;
+    height: 95vh;
+}
+
+.header-txt{
+    position:absolute;
+    left: 75px;
+    bottom: 25px;
+    color: white;
+    font-size: 12vw;
+    line-height: 11vw;
+    font-weight: normal;
+    font-family: 'Trade Gothic 20 Condensed';
+    margin: 0px;
+    z-index: 200;
+}
+
+/* ******************************************************************************************************* */
+
+/* ******************************************************************************************************* */
+
+.center-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.before-feature{
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 60px;
+}
+
+.img-before-feature{
+    animation: corazon 1.5s infinite;
+}
+
+/* ******************************************************************************************************* */
+
+
+/* ******************************************************************************************************* */
+.feature-title{
+    height: 250px;
+    background-color: white;
+    margin: 0px;
+    padding-left: 5vw;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 180px;
+}
+
+.feature-tabla{
+    border-bottom: 100px solid white;
+    border-left: 5vw solid white;
+}
+
+.feature-tabla-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-tabla-row-img-left{
+    width: 10vw; 
+    height: 10vw; 
+    border-top: 20px solid white;
+    border-left: 0vw solid white;
+    border-right: 2vw solid white;
+    border-bottom: 0px solid white;
+}
+
+.feature-tabla-row-img-right{
+    width: 10vw; 
+    height: 10vw; 
+    border-top: 20px solid white;
+    border-right: 2vw solid white;
+    border-bottom: 0px solid white;
+}
+
+.feature-tabla-row-div{
+    width: 33vw; 
+    background-color: white; 
+    height: 10vw; 
+    border-bottom: 0px solid white; 
+    border-top: 20px solid white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.feature-right{
+    border-right: 5vw solid white;
+}
+
+.feature-h3-violeta-claro-left{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--violeta-feature); 
+    font-weight: 100;
+    padding: 0% 5%;
+    height: 30px !important;
+    width: 100%;
+}
+
+.feature-h3-violeta-claro{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--violeta-feature); 
+    font-weight: 100;
+    padding: 0% 5%;
+    height: 30px !important;
+}
+
+.feature-h3-intermedio-claro-left{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--intermedio-feature); 
+    font-weight: 100;
+    padding: 0% 5%;
+    height: 30px;
+    margin: 0px !important;
+}
+
+.feature-h3-intermedio-claro{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--intermedio-feature); 
+    font-weight: 100;
+    padding: 0% 0% 0% 5%;
+    height: 30px;
+    width: 100% !important;
+}
+
+.feature-h3-azul-claro-left{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--azul-feature); 
+    font-weight: 100;
+    padding: 0% 5%;
+    width: 100%;
+    height: 30px;
+}
+
+.feature-h3-azul-claro{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    border-bottom: 20px solid var(--azul-feature); 
+    font-weight: 100;
+    padding: 0% 0% 0% 5%;
+    height: 30px;
+}
+
+.feature-h4{
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 30px;
+    font-weight: 100;
+    padding: 0% 5%;
+    margin: 10px 0px;
+    width: 100%;
+}
+/* ******************************************************************************************************* */
+
+
+
+
+
+
+
+/* ******************************************************************************************************* */
+.galeria{
+   background:  linear-gradient(180deg, white 30%, var(--gris) 30%);  
+   padding-top: 100px;  
+}
+
+.galeria-flex{
+    display: block;
+    justify-content: left;
+    align-items: center;
+    padding:0px 5%;
+}
+
+.galeria-img-1{
+    width: 35%;
+    padding-right: 5%;
+    opacity: 0;
+}
+
+.galeria-img-2{
+    width: 100%;
+    opacity: 0;
+}
+
+.galeria-img-3{   
+    padding-top: 100px;
+    width: 100%;
+    opacity: 0;
+}
+
+/* ******************************************************************************************************* */
+
+
+/* ******************************************************************************************************* */
+.after-galeria{
+    padding-top: 100px;
+    background-color: #333;
+    padding-bottom: 15vh;
+}
+
+.after-galeria-h1{
+    margin: 0;
+    padding-top: 20vh;
+    color: white;
+    padding-left: 5vw;
+    font-family: 'Trade Gothic 20 Condensed';
+    line-height: 180px;
+    font-size: 180px;
+}
+
+.after-galeria-tabla{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.after-galeria-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    background-color: var(--gris);
+    color: white;
+    font-family: 'Trade Gothic 18 Condensed';
+    padding-left:5vw;
+    margin-right: 5vw;
+    font-size: 40px;
+
+}
+
+.after-galeria-div-img{
+    background-color: var(--gris);
+    width: 30vw;
+    margin-right: 5vw;
+    /* animation: corazon 1.5s infinite; */
+
+}
+
+.after-galeria-img{
+    width: 100%;
+}
+
+/* ******************************************************************************************************* */
+
+.programa{
+    padding:0% 5%;
+    background-color: var(--gris);
+}
+
+.program{
+    background-color: #555;
+    margin: 0% 0% 0% 0%;
+}
+
+.programa-h1{
+    color: white;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 180px;
+    margin-bottom: 120px;
+}
+
+.program-1-title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 45px !important;
+}
+
+.program-1-title-img{
+    width: 95px;
+    height: 95px;
+    margin-right: 2%;
+    background-image: url('../img/Grupo 23@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s;
+}
+
+.img-program{
+    background-image: url('../img/Grupo 22@2x.png') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /* transform: rotateZ(180deg); */
+    transition: all 0.3s;
+}
+
+.lista-nivel-item{
+    font-family: 'Trade Gothic Italic';
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* ******************************************************************************************************* */
+
+
+/* ******************************************************************************************************* */
+
+.frase{
+    color: white;
+    font-family: 'Trade Gothic Bold Italic';
+    font-style: italic;
+    font-size: 30px !important;
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(145deg, var(--azul), var(--violeta));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ******************************************************************************************************* */
+
+
+/* ******************************************************************************************************* */
+
+.contacto{
+    background-color: var(--gris);
+    color: white;
+    padding: 100px 5vw 200px 5vw;
+}
+
+.contacto-h1{
+    color: white;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 180px !important;
+}
+
+.btn-enviar-contacto{
+    background-color: white;
+    color: var(--violeta);
+    height: 80px;
+    font-family: 'Trade Gothic 18 Condensed';
+    padding: 0px 50px;
+    font-size: 40px;
+    border: none;
+    text-decoration: none;
+    animation: white-back 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.btn-enviar-contacto:hover{
+    animation: violeta-back 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes violeta-back {
+    0% {
+        background-color: white;
+        color: var(--violeta);
+    }
+    100% {    
+        background-color: var(--violeta);
+        color: white;
+    }
+}
+
+@keyframes white-back {
+    0% {    
+        background-color: var(--violeta);
+        color: white;
+    }
+    100% {
+        background-color: white;
+        color: var(--violeta);
+    }
+}
+
+
+
+.contacto-center{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contacto-center-btn{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-btn-div{
+    width: 25vw;
+}
+.contacto-info-div{
+    width: 75vw;
+}
+
+.contacto-info{
+    margin: 0px 0px 0px 40px; 
+    float: right; 
+    height: 25px;
+    padding:0px 20px;
+    color: white;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 40px !important;
+    animation: violeta-margin 0.3s;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+}
+
+.contacto-info:hover{
+    animation: azul-margin 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes azul-margin {
+    0% {
+        border-bottom: 25px solid var(--violeta); 
+    }
+    100% {    
+        border-bottom: 25px solid var(--azul); 
+    }
+}
+
+@keyframes violeta-margin {
+    0% {    
+        border-bottom: 25px solid var(--azul); 
+    }
+    100% {
+        border-bottom: 25px solid var(--violeta); 
+    }
+}
+
+
+
+
+.contact-input-div-left{
+    width: 60%;
+}
+.contact-input-div-right{
+    width: 40%;
+}
+
+.contact-input-div-100{
+    width: 100%;
+}
+
+.input-contact-left{
+    width: 80%;
+}
+.input-contact-right{
+    width: 100%;
+}
+
+.input-contact-100{
+    width: 100%;
+}
+
+.div-input-contact{
+    position: relative;
+    display: flex;
+    height: 50px;
+    background-color: aqua;
+}
+
+.inputs-contact{
+    background-color: #3CBC8D;
+    color: white;
+    border: none;
+    border-bottom: 5px solid red;
+    padding: 5px 10px;
+    left: 0;
+}
+
+
+.frase-contacto{
+    color: white;
+    height: 500px;
+    width: 100%;
+    background-image: url('../img/frase-after-contacto.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.back-frase-after-contacto{
+    height: 500px;
+    float: right;
+}
+
+.frase-after-contacto{
+    color: white;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 60px !important;
+    text-align: center;
+    width: 100% !important;
+}
+
+.h2-frase-after-contacto{
+    margin-bottom: 30px !important;
+}
+
+
+.footer{
+    color: white;
+    height: 300px;
+    width: 100%;
+    background: var(--gris);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-h2{
+    text-align: center;
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 20px !important;
+}
+
+.footer-a{
+    text-align: center;
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 20px !important;
+    text-decoration: none;
+    color: white;
+    border-bottom: 0px solid white;
+    transition: all 0.3s;
+}
+.footer-a:hover{
+    border-bottom: 2px solid white;
+    transition: all 0.3s;
+}
+
+.invert{
+    mix-blend-mode: difference;
+ }
+ 
+
+.parallax{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--azul) 30%, var(--violeta) 70%);
+    z-index: -100;
+}
+
+@keyframes corazon {
+    0% {
+        width: 30vw;
+    }
+    10%{
+        width: 32vw;
+    }
+    20%{
+        width: 28vw;
+    }
+    30%{
+        width: 32vw;
+    }
+    50%{
+        width: 30vw;
+    }
+    100% {    
+        width: 30vw;
+    }
+}
+
+@keyframes corazon-pace {
+    0% {
+        width: 10vw;
+        filter:drop-shadow(0px 0px 3px #606060);
+    }
+    10%{
+        width: 12vw;
+        filter:drop-shadow(0px 0px 10px #606060);
+    }
+    20%{
+        width: 8vw;
+        filter:drop-shadow(0px 0px 3px #606060);
+    }
+    30%{
+        width: 12vw;
+        filter:drop-shadow(0px 0px 10px #606060);
+    }
+    50%{
+        width: 10vw;
+        filter:drop-shadow(0px 0px 3px #606060);
+    }
+    100% { 
+        width: 10vw;
+        filter:drop-shadow(0px 0px 10px #606060);
+    }
+}

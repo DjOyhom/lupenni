@@ -1,0 +1,86 @@
+.about-me{
+    padding-top: 5%;
+    height: 110vh;
+    background-color: white;
+    border-bottom: 3px solid var(--azul);
+}
+
+.about-section{
+    height: 120vh;
+    padding: 0% 5% 0% 5%;
+    border-bottom: 10vh solid white !important;
+}
+
+.contacto-intro{
+    height: 70vh;
+    border-top: 20vh solid var(--gris);
+    border-right: 5vw solid var(--gris);
+    border-bottom: 30vh solid var(--gris);
+    border-left: 5vw solid var(--gris);
+    background: linear-gradient(315deg,var(--violeta), var(--azul));
+}
+
+.contacto-intro-cuadro{
+  height: 100%;
+  background-image: url('../img/Grupo 16@2x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.about-foto{
+    padding: 10v 0vw;
+    width: 30vw;
+}
+
+.about-name{
+    position: absolute;
+    top: 140vh;
+    left: 30vw;
+    background: white !important;
+    padding: 0% 3vw;
+    font-family: 'Trade Gothic 20 Condensed';
+    font-size: 170px;
+    margin: 0;
+    color: var(--violeta);
+}
+
+.about-texto{
+    position: absolute;
+    top: 170vh;
+    left: 40vw;
+    width: 50vw;
+    background: white !important;
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 55px;
+    text-align: left;
+    line-height: 60px;
+    margin: 0;
+    color: var(--gris);
+}
+
+.about-texto-info{
+    position: absolute;
+    top: 205vh;
+    left: 40vw;
+    width: 50vw;
+    background: white !important;
+    font-family: 'Trade Gothic 18 Condensed';
+    font-size: 40px;
+    text-align: left;
+    margin: 0;
+    color: var(--gris);
+}
+
+.about-a-info{
+    color: var(--azul);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.about-a-info:hover{
+    color: var(--violeta);
+    transition: all 0.3s;
+}

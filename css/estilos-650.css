@@ -1,0 +1,57 @@
+@media screen and (max-width: 650px) {
+
+
+    .nav-icon {
+        width: 30px !important;
+        z-index: 30000 !important;
+    }
+
+    .nav-icon:after, 
+    .nav-icon:before, 
+    .nav-icon div {
+        height: 3px !important;
+    }
+
+    .nav-icon2:before {
+        transform: translateY(9px) rotate(135deg) !important;
+    }
+      
+    .nav-icon2:after {
+        transform: translateY(-9px) rotate(-135deg) !important;
+    }
+      
+
+    .header-txt{
+        font-size: 90px !important;
+        line-height: 90px !important;
+        left: 25px !important;
+    }
+
+    .before-feature{
+        display: inline-block !important;
+        font-size: 20px !important;
+        width: 100% !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

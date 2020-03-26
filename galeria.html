@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="./css/fuentes.css">
+    <link rel="stylesheet" href="./css/estilos-lg.css">
+    <link rel="stylesheet" href="./css/estilos-md.css">
+    <link rel="stylesheet" href="./css/estilos-sm.css">
+    <link rel="stylesheet" href="./css/estilos-xs.css">
+    <link rel="stylesheet" href="./css/estilos-gral.css">
+    <link rel="stylesheet" href="./css/estilos-input-contacto.css">
+    <link rel="stylesheet" href="./css/estilos-contacto.css">
+    <link rel="stylesheet" href="./css/estilos-niveles.css">
+    <link rel="stylesheet" href="./css/estilos-galeria.css">
+    <link rel="stylesheet" href="./css/estilos-menu.css">
+    <link rel="stylesheet" href="./css/animaciones.css">
+
+    <!-- PACE -->
+    <link href="./lib/Pace/pace-theme-flash.css" rel="stylesheet" />
+    <script src="./lib/Pace/pace.min.js"></script>
+</head>
+<body>
+    
+    <img class="lupenni-logo " id="logolupenni" src="./img/Logo@2x.png" alt="">
+    <div class="nav-icon " id="btnburger" onclick="menu()">
+        <div></div>
+    </div>
+
+    <section>
+        <div class="galeria-intro">
+            <div class="galeria-intro-cuadro">
+                <h1 style="margin: 0px;">Galeria</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="afterintro">
+        <div class="galeria-fotos">
+            <div class="center-flex">
+                <img id='galeriafoto1' class="foto-1" src="./img/DSC_2267.png" alt="">
+            </div>
+
+            <div class="center-flex">
+                <div style="width: 55%;">
+                    <img id='galeriafoto2' class="foto-2" src="./img/DSC_1691.png" alt="">
+                    <img id='galeriafoto4' class="foto-4" src="./img/DSC_5276.png" alt="">
+                </div>
+                <img id='galeriafoto3' class="foto-3" src="./img/DSC_6017-ph.png" alt="">
+            </div>
+
+            <div class="center-flex">
+                <img id='galeriafoto5' class="foto-5" src="./img/DSC_5000.png" alt="">
+                <img id='galeriafoto6' class="foto-6" src="./img/DSC_8258.png" alt="">
+            </div>
+
+            <img id='galeriafoto7' class="foto-7" src="./img/DSC_2029-ph-3.png" alt="">
+           
+            <div class="center-flex">
+                <img id='galeriafoto8' class="foto-8" src="./img/DSC_6064.png" alt="">
+                <div style="width: 40%;">
+                    <img id='galeriafoto9' class="foto-9" src="./img/DSC_2349.png" alt="">
+                    <img id='galeriafoto10' class="foto-10" src="./img/DSC_6141.png" alt="">
+                </div>
+            </div>
+            <img id='galeriafoto11' class="foto-11" src="./img/DSC_1398-3.png" alt="">
+            <div class="center-flex">
+                <img id='galeriafoto12' class="foto-12" src="./img/DSC_0842.png" alt="">
+                <img id='galeriafoto13' class="foto-13" src="./img/DSC_1189.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="contacto">
+            <h1 class="margin-cero contacto-h1">Contacto</h1>
+            <div class="contacto-center">
+                <div class="omrs-input-group w45">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">Nombre</span>
+                    </label>
+                </div>
+                <div class="omrs-input-group w40">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">E-mail</span>
+                    </label>
+                </div>
+            </div>
+            <div class="contacto-center">
+                <div class="omrs-input-group w45">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">Asunto</span>
+                    </label>
+                </div>
+                <div class="omrs-input-group w40">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">Teléfono</span>
+                    </label>
+                </div>
+            </div>
+            <div class="contacto-center">
+                <div class="omrs-input-group w100">
+                    <label class="omrs-input-underlined">
+                        <input required>
+                        <span class="omrs-input-label">Mensaje</span>
+                    </label>
+                </div>
+            </div>
+            <div class="contacto-center-btn">
+                <div class="contacto-btn-div">
+                    <button class="btn-enviar-contacto">Enviar</button>     
+                </div>
+                <div class="contacto-info-div">
+                    <a href="mailto:hola@lupenni.com" class="contacto-info">hola@lupenni.com</a>
+                    <a href="tel:+59894092463" class="contacto-info">094 092 463</a>
+                </div>
+           
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="frase-contacto">
+            <div class="frase-after-contacto">
+                <h2 class="margin-cero h2-frase-after-contacto">¿Quieres saber más?</h2>
+                <button class="btn-enviar-contacto">Charlemos</button>  
+            </div>
+        </div>
+    </section>
+
+    
+    <section>
+        <div class="footer">
+            <h2 class="margin-cero footer-h2">Lupenni 2020 © Todos los derechos reservados. <br>
+                <a class="footer-a" href="https://instagram.com/ocedot_studios"> Designed by OCEDOT</a>
+        </div>
+    </section>
+
+    <div id="menu" class="menu">
+        <div class="menu-foto"></div>
+        <div class="menu-items">
+            <div class="menu-items-div">
+                <div style="height: 5%;">
+                    <img src="./img/Logo.png" class="logo-menu" alt=""><br>
+                </div>
+                <div style="height: 85%; padding-top: 10%;">
+                    <div style="height: 70%;">
+                        <a id="iniciomenu"class="menu-item">Inicio</a><br>
+                        <a id="programamenu" class="menu-item">Programa</a><br>
+                        <a href="contacto.html" class="menu-item">Contacto</a><br>
+                        <a href="galeria.html" class="menu-item">Galeria</a><br>
+                        <a href="index.html" class="menu-item">Empresas amigas</a><br>
+                    </div>
+                    <div style="height: 30%;">
+                        <a href="tel:+59894092463" class="menu-item-invert">094 092 463</a><br>
+                        <a href="mailto:hola@lupenni.com" class="menu-item-invert">hola@lupenni.com</a><br>
+                        <div class="insta-menu-div" onmouseover="instamenuazul()" onmouseout="instamenu()"> 
+                            <div class="insta-menu-img" id="divmenuinsta"></div>
+                            <a class="insta-menu-text" href="http://instagram.com/lupenni.studio">Lupenni.studio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/animaciones.js "></script>
+    <script src="./js/menu.js "></script>
+
+
+</body>
+</html>

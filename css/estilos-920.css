@@ -1,0 +1,56 @@
+@media screen and (max-width: 790px) and (min-width: 651px){
+
+    /* .lupenni-logo{
+        left: 37.5% !important;
+        width: 11% !important;
+    } */
+
+    .nav-icon {
+        width: 35px !important;
+        z-index: 30000 !important;
+    }
+
+    .nav-icon:after, 
+    .nav-icon:before, 
+    .nav-icon div {
+        height: 4px !important;
+    }
+
+    .nav-icon2:before {
+        transform: translateY(10px) rotate(135deg) !important;
+    }
+      
+    .nav-icon2:after {
+        transform: translateY(-10px) rotate(-135deg) !important;
+    }
+      
+    .header-txt{
+        left: 50px !important;
+        font-size: 110px !important;
+        line-height: 110px !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
