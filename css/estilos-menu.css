@@ -136,3 +136,13 @@
 .nav-icon2 div {
     transform: scale(0);
 }
+
+
+@media screen and (max-width: 950px) {
+    .menu-foto{
+        width: 0% !important;
+    }
+    .menu-items{
+        width: 100% !important;
+    }
+}
