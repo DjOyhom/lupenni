@@ -72,56 +72,6 @@
             mix-blend-mode: difference;
         }
         
-
-
-        @keyframes corazon {
-            0% {
-                width: 30vw;
-            }
-            10%{
-                width: 32vw;
-            }
-            20%{
-                width: 28vw;
-            }
-            30%{
-                width: 32vw;
-            }
-            50%{
-                width: 30vw;
-            }
-            100% {    
-                width: 30vw;
-            }
-        }
-
-        @keyframes corazon-pace {
-            0% {
-                width: 10vw;
-                filter:drop-shadow(0px 0px 3px #606060);
-            }
-            10%{
-                width: 12vw;
-                filter:drop-shadow(0px 0px 10px #606060);
-            }
-            20%{
-                width: 8vw;
-                filter:drop-shadow(0px 0px 3px #606060);
-            }
-            30%{
-                width: 12vw;
-                filter:drop-shadow(0px 0px 10px #606060);
-            }
-            50%{
-                width: 10vw;
-                filter:drop-shadow(0px 0px 3px #606060);
-            }
-            100% { 
-                width: 10vw;
-                filter:drop-shadow(0px 0px 10px #606060);
-            }
-        }
-
         /* gral-------------------------------------- */
 
 
@@ -135,9 +85,10 @@
             
             .video-index{
                 position:fixed;
-                left: 50%;
+                left: 51%;
                 top: 50%;
-                min-width: 100vw;
+                
+                min-width: 102vw;
                 min-height: 100vh;
                 transform: translate(-50%, -50%);
                 z-index: -2;
@@ -150,7 +101,6 @@
                 height: 100vh;
                 width: 100%;
                 background-color: white;
-                padding: 10% 0%; 
                 position: relative;
             }
 
@@ -159,9 +109,10 @@
             /* FEATURE-------------------------------------- */
             .feature{
                 background-color: white;
-                min-height: 100vh;
-                border-left: 10vw solid white;
-                border-right: 10vw solid white;
+                height: 100vh;
+                min-height:800px ;
+                border-left: 5vw solid white;
+                border-right: 5vw solid white;
             }
             .back-white{
                 background-color: white;
@@ -173,21 +124,24 @@
                 font-size: 12vw;
                 font-family: 'Trade Gothic 20 Condensed';
                 background-color: white;
+                border-bottom: 50px solid white;
             }
             .feature-tabla-row-img-right{
                 width: 150px;
                 border-right: 5% solid white;
+                border-bottom: 40px solid white;
             }
             .feature-tabla-row-img-left{
                 border-right: 5% solid white;
                 width: 150px;
+                border-bottom: 40px solid white;
             }
             .parallax-feature{
                 position: absolute; 
                 left:0; 
                 top:0; 
                 width: 100%; 
-                height: 450px;
+                height: 570px;
                  background: linear-gradient(to top, var(--azul) 40%, var(--violeta) 80%); 
                 z-index: 0;
                 background-attachment: fixed;
@@ -197,7 +151,8 @@
             }
             .feature-col-img-1{
                 position: absolute; 
-                left:0; 
+                border-left: 80px solid white;
+                left:0%; 
                 top:0;
             }
             .feature-col-img-2{
@@ -207,61 +162,64 @@
             }
             .feature-col-text-1{
                 position: absolute; 
-                left: 150px; 
+                left: calc(150px + 80px); 
                 background-color: white; 
-                height: 450px; 
-                width: calc(50% - 150px);
+                height: 570px; 
+                width: calc(50% - (150px + 80px));
             }
             .feature-col-text-2{
                 position: absolute; 
                 left: calc(150px + 50%); 
                 background-color: white; 
-                height: 450px; 
+                height: 570px; 
                 width: calc(50% - 150px);
             }
             .feature-div-text{
                 height: 150px; 
+                border-bottom: 40px solid white;
                 width: 100%; 
                 display: flex; 
                 align-items: center;
             }
             .feature-img{
                 width: 150px;
+                border-bottom: 40px solid white;
             }
             /* FEATURE-------------------------------------- */
 
             /* GALERIA-------------------------------------- */
             .galeria{
-                background:  linear-gradient(180deg, white 30%, var(--gris) 30%);  
-                padding-top: 100px;  
-            }
+   background:  linear-gradient(180deg, white 30%, var(--gris) 30%);  
+   padding-top: 100px;  
+}
 
-           .galeria-flex{
-                display: inline-flex;
-                justify-content: left;
-                align-items: center;
-                padding:0px 5%;
-            }
+.galeria-flex{
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    padding:0px 5%;
+}
 
-            .galeria-img-1{
-                width: 35%;
-                padding-right: 5%;
-                opacity: 0;
-            }
+.galeria-img-1{
+    width: 35%;
+    padding-right: 5%;
+    opacity: 0;
+}
 
-            .galeria-img-2{
-                width: 100%;
-                opacity: 0;
-            }
+.galeria-img-2{
+    width: 100%;
+    opacity: 0;
+}
 
-            .galeria-img-3{   
-                padding-top: 100px;
-                width: 100%;
-                opacity: 0;
-            }
-            .galeria-foto2-3{
-                width: 60%;
-            }
+.galeria-img-3{   
+    padding-top: 100px;
+    width: 100%;
+    opacity: 0;
+}
+
+.foto2-3{
+    width: 60%;
+}
             /* GALERIA-------------------------------------- */
 
             /* AFTER-GALERIA-------------------------------- */
@@ -623,7 +581,7 @@
 
         .header-txt{
             position:absolute;
-            left: 25px;
+            left: 5vw;
             bottom: 25px;
             color: white;
             font-size: 12vw;
@@ -680,11 +638,11 @@
             height: 100%;
             top: 0px;
             left: 0px;
-            font-size: 5vw;
+            font-size: 2.5vw;
             font-family: 'Trade Gothic 20 Condensed';
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: flex-end;
             text-align: right;
         }
         .after-header-movil-h-25-r{
@@ -693,10 +651,9 @@
             height: 100%;
             top: 0px;
             right: 0px;
-            font-size: 5vw;
+            font-size: 2.5vw;
             font-family: 'Trade Gothic 20 Condensed';
             display: flex;
-            justify-content: center;
             align-items: center;
             text-align: left;
         }
@@ -720,6 +677,7 @@
         @media screen and (max-width: 950px) {
           
             .after-header-movil-h-25-l{
+                justify-content: center !important;
                 width: 100% !important;
                 height: 30% !important;
                 top: 0px !important;
@@ -731,6 +689,7 @@
                 animation: corazon-w 1.5s infinite !important;
             }
             .after-header-movil-h-25-r{
+                justify-content: center !important;
                 width: 100% !important;
                 height: 30% !important;
                 top: 70% !important;
@@ -751,7 +710,6 @@
 
             .feature{
                 min-height: 100vh !important;
-                border-left: 5vw solid white !important;
             }
 
             .feature-h3-violeta{
@@ -774,6 +732,7 @@
             }
 
             .feature-col-img-1{
+                border-left: 0px solid white;
                 position: absolute !important;
                 left:0 !important;
                 top:0 !important;
@@ -782,22 +741,23 @@
                 position: absolute !important;
                 left: 100px !important;
                 background-color: white !important;
-                height: 300px !important;
+                height: 420px !important;
                 width: calc(100% - 100px) !important;
                 border-left: 5vw solid white !important;
             }
             .feature-col-img-2{
+                border-left: 0px solid white;
                 position: absolute !important;
                 left:0 !important;
-                top:300px !important;
+                top:420px !important;
             }
             .feature-col-text-2{
                 border-left: 5vw solid white !important;
                 position: absolute !important;
                 left: 100px !important;
                 background-color: white !important;
-                height: 300px !important;
-                top: 300px !important;
+                height: 420px !important;
+                top: 420px !important;
                 width: calc(100% - 100px) !important;
             }
             .feature-div-text{
@@ -809,7 +769,7 @@
                 left:0; 
                 top:0; 
                 width: 100%; 
-                height: 600px;
+                height: 840px;
                  background: linear-gradient(to top, var(--azul) 30%, var(--violeta) 70%); 
                 z-index: 0;
                 background-attachment: fixed;
@@ -819,24 +779,34 @@
             }
        
             /* GALERIA------------------------------------- */
-            .galeria-flex{
-                display: inline-block !important;
-                padding:0px 0px !important;
-            }
-            .galeria-img-1{
-                width: 100% !important;
-            }
-            .galeria-img-2{
-                padding-top: 50px !important;
-                width: 100% !important;
-            }
-            .galeria-img-3{   
-                padding-top: 50px !important;
-                width: 100% !important;
-            }
-            .galeria-foto2-3{
-                width: 100% !important;
-            }
+
+
+.galeria-flex{
+    display: block !important;
+    padding:0px 0px !important;
+}
+
+.galeria-img-1{
+    padding-top: 100px !important;
+    width: 100% !important;
+    padding-right: 0% !important;
+    opacity: 0 !important;
+}
+
+.galeria-img-2{
+    padding-top: 100px !important;
+    width: 100% !important;
+    opacity: 0 !important;
+}
+
+.galeria-img-3{   
+    padding-top: 100px !important;
+    width: 100% !important;
+    opacity: 0 !important;
+}
+.foto2-3{
+    width: 100%;
+}
             
             /* AFTER GALERIA------------------------------- */
             .after-galeria-h1{
@@ -936,22 +906,22 @@
 
     @keyframes corazon {
         0% {
-            width: 70%;
+            width: 90%;
         }
         10%{
-            width: 73%;
+            width: 93%;
         }
         20%{
-            width: 67%;
+            width: 87%;
         }
         30%{
-            width: 75%;
+            width: 95%;
         }
         50%{
-            width: 70%;
+            width: 90%;
         }
         100% {    
-            width: 70%;
+            width: 90%;
         }
     }
     @keyframes corazon-w {
@@ -1005,7 +975,7 @@
     </style>
 
 </head>
-<body onload="move()" onscroll="scrollcero()" id="bodyelement" style="background-color: #333;">
+<body onload="move()" id="bodyelement" style="background-color: #333;">
     
     <!-- HEADER------------------------------------------------- -->
     <img class="lupenni-logo" id="logolupenni"  src="./img/Logo@2x.png" alt="">
@@ -1036,7 +1006,7 @@
     <section>
         <div class="before-feature" id="afterintro">
             <div class="after-header-movil-h-25-l">
-                <h2>Escuela de Maquillaje</h2>
+                <h2>Escuela de  <br>Maquillaje</h2>
             </div>
             
             <div class="after-header-movil-h-50">
@@ -1044,7 +1014,7 @@
             </div>
             
             <div class="after-header-movil-h-25-r">
-                <h2>Maquillaje profesional</h2>
+                <h2>Maquillaje <br>profesional</h2>
             </div>
         </div>
     </section>
@@ -1127,7 +1097,7 @@
     <div class="galeria">
         <div class="galeria-flex">
             <img id="indexfoto1" class="galeria-img-1" src="./img/DSC_6233.png" alt="">
-            <div class="galeria-foto2-3">
+            <div class="foto2-3">
                 <img id="indexfoto2" class="galeria-img-2" src="./img/DSC_2349.png" alt="">
                 <img id="indexfoto3" class="galeria-img-3" src="./img/DSC_1518.png" alt="">
             </div>
@@ -1313,12 +1283,6 @@
         }
         function instamenu(){
             document.getElementById('divmenuinsta').classList.remove("insta-menu-img-azul");
-        }
-        function scrollcero() {
-            var body = document.body; // Safari
-            var html = document.documentElement; // Chrome, Firefox, IE and Opera places the overflow at the <html> level, unless else is specified. Therefore, we use the documentElement property for these browsers
-            body.scrollLeft = 0;
-            html.scrollLeft = 0;
         }
     </script>
 

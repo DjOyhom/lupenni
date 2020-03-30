@@ -3,7 +3,7 @@ document.onscroll = function(){
     // animaciones del index
     try {
         var top  = window.pageYOffset || document.documentElement.scrollTop;
-        var indexfoto1 = document.getElementById('indexfoto1').offsetTop + 300;
+        var indexfoto1 = document.getElementById('indexfoto1').offsetTop;
         var indexfoto2 = document.getElementById('indexfoto2').offsetTop;
         var indexfoto3 = document.getElementById('indexfoto3').offsetTop;
         var tamVentCli = window.innerHeight;
