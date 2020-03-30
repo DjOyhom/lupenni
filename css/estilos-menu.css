@@ -145,4 +145,8 @@
     .menu-items{
         width: 100% !important;
     }
+    .menu{
+        height: 100%;
+        padding-bottom: 20% !important;
+    }
 }
