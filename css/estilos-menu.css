@@ -94,13 +94,13 @@
 }
 
 @keyframes top-in {
-    0% {top: -100%;}
+    0% {top: -120%;}
     100% {top: 0%;}
 }
 @keyframes top-out {
     0% {top: 0%;}
 
-    100% {top: -100%;}
+    100% {top: -120%;}
 }
 
 
