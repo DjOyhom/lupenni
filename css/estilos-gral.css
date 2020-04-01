@@ -505,3 +505,24 @@ h4{
     color: white;
     font-family: 'Trade Gothic 18 Condensed';
 }
+
+.btn-up{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-image: url('../img/Grupo 21@2x.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+    /* filter:drop-shadow(0px 0px 3px var(--gris)); */
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.fade-btn-up-in{
+    opacity: 1;
+    transition: all 0.5s;
+}
