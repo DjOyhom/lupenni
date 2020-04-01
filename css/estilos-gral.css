@@ -50,7 +50,7 @@ h4{
     padding: 100px 5vw 100px 5vw;
 }
 .contacto-container{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-color: var(--gris);
     position: relative;
