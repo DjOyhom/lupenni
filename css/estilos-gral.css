@@ -212,7 +212,7 @@ h4{
 /* FRASE DESPUES DE CONTACTO */
 .frase-contacto{
     color: white;
-    height: 80vh;
+    height: 500px;
     width: 100%;
     background-image: url('../img/frase-after-contacto.png');
     background-position: center;
@@ -247,7 +247,7 @@ h4{
 .frase-after-contacto{
     color: white;
     font-family: 'Trade Gothic 20 Condensed';
-    font-size: 5vw !important;
+    font-size: 50px !important;
     text-align: center;
     width: 100% !important;
 }
