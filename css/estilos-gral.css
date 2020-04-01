@@ -123,18 +123,15 @@ h4{
 
 .contacto-info-div{
     position: absolute !important; 
-    top: 550px !important; 
-    height: 10vw;
+    top: 530px !important; 
     margin: 50px 0px 24px 0px !important;
     right: 0vw; 
-    margin: 0px !important;
     width: 60vw;
 
 }
 
 .contacto-info{
     margin: 0px 0px 0px 40px; 
-    margin-top: calc(10vw - 50px);
     float: right; 
     height: 25px;
     padding:0px 20px;
