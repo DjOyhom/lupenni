@@ -18,23 +18,86 @@
     <link href="./lib/Pace/pace-theme-flash.css" rel="stylesheet" />
     <script src="./lib/Pace/pace.min.js"></script>
     
+    <style>
+        .img-cont{
+            width: 30%; position: relative; left: 5%; top: 5%;
+        }
+        .txt-h1-cont{
+           
+            white-space:nowrap;
+            background: white !important;
+            padding: 0% 3vw;
+            font-family: 'Trade Gothic 20 Condensed';
+            font-size: 12vw;
+            color: var(--violeta);
+        }
+        .div-foto-txt-cont{
+            width: 100%; background-color: red; position: relative;
+        }
+
+        @media screen and (max-width: 950px) {
+        .img-cont{
+            min-width: 100%;
+            height: auto; position: relative; left: 0% !important; top: 0% !important;
+        }
+        .txt-h1-cont{
+            transform: translateY(-200%);
+            
+            width: 100% !important;
+            right: 0% !important;
+            position: relative;
+            background: white !important;
+            padding: 0% 3vw;
+            font-family: 'Trade Gothic 20 Condensed';
+            font-size: 12vw;
+            margin: 0;
+            color: var(--violeta);
+            text-align: center;
+        }
+
+        .div-foto-txt-cont{
+            width: 100%; height: 130vh; background-color: red; position: relative;
+        }
+
+        }
+    </style>
+
 </head>
 <body>
 
-    <img class="lupenni-logo " id="logolupenni" src="./img/Logo@2x.png" alt="">
+    <img class="lupenni-logo " id="logolupenni" src="./img/Logo@2x.pwidth: 100%; height: 100vh; background-color: red; position: relative;ng" alt="">
     <div class="nav-icon " id="btnburger" onclick="menu()">
         <div></div>
     </div>
 
     <section>
-        <div class="contacto-intro">
-            <div class="contacto-intro-cuadro">
-                <h1 style="margin: 0px;">Galeria</h1>
-            </div>
+        <div class="back-gris-cont-gal"></div>
+        <div class="back-white-cont-gal"></div>
+        <div class="cont-gal-info-header">
+            <h1 class="h1-info-cont-gal">Contacto</h1>
+            <p class="p-info-cont-gal">Un gran salto para ti ya sea profesionalmente o por hobby. Yo ya estoy lista para comenzar esta hermosa experiencia. Hagámoslo.</p>
         </div>
     </section>
 
-    <section id="afterintro" class="about-section">
+    <div style="width: 100%; background-color: aqua; display: flex; justify-content: center; align-items: flex-start;">
+        <div style="margin: 5%; height: 800px; background-color: blue;display: inline-flex;"></div>
+        <div style="display: inline-flex; height: 180px; background-color: black; transform: translate(-25%, +100%);">
+            <h1 class="txt-h1-cont">Lucía Pennino</h1>
+        </div>
+    </div>
+
+
+
+    <div class="div-foto-txt-cont">
+        <div>
+            <img class="img-cont" src="./img/DSC_7293.png" alt="">
+        </div>
+        <div style="position: relative; width: 100%;">
+            <h1 class="txt-h1-cont">Lucía Pennino</h1>
+        </div>
+    </div>
+    
+    <!-- <section id="afterintro" class="about-section">
         <div class="about-me">
             <img class="about-foto" src="./img/DSC_7293.png" alt="">
             <h1 class="about-name">Lucía Pennino</h1>
@@ -42,7 +105,7 @@
             <p class="about-texto-info">E-mail: <a href="" class="about-a-info">hola@lupenni.com</a> <br>
                 Teléfono: <a href="" class="about-a-info">094 092 463</a></p>
         </div>
-    </section>
+    </section> -->
 
     <section>
         <div class="contacto">
@@ -94,7 +157,7 @@
         <div class="frase-contacto">
             <div class="frase-after-contacto">
                 <h2 class="margin-cero h2-frase-after-contacto">¿Te interesa?</h2>
-                <button class="btn-enviar-contacto">¡Vamos!</button>  
+                <button class="btn-frase">¡Vamos!</button>  
             </div>
         </div>
     </section>
@@ -118,7 +181,7 @@
                 </div>
                 <div style="height: 85%; padding-top: 10%;">
                     <div style="height: 70%;">
-                        <a id="iniciomenu"class="menu-item">Inicio</a><br>
+                        <a href="index.html" class="menu-item">Inicio</a><br>
                         <a id="programamenu" class="menu-item">Programa</a><br>
                         <a href="contacto.html" class="menu-item">Contacto</a><br>
                         <a href="galeria.html" class="menu-item">Galeria</a><br>
@@ -137,6 +200,7 @@
         </div>
     </div>
 
+    <div class="btn-up" id="up"></div>
 
     <script src="./js/menu.js "></script>
     <script src="./js/animaciones.js "></script>

@@ -231,7 +231,7 @@
                 width: 95px;
                 height: 95px;
                 margin-right: 2%;
-                background-image: url('./img/Grupo 23@2x.png');
+                background-image: url('../img/Grupo 23@2x.png');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -239,7 +239,7 @@
             }
 
             .img-program{
-                background-image: url('./img/Grupo 22@2x.png') !important;
+                background-image: url('../img/Grupo 22@2x.png') !important;
                 background-position: center !important;
                 background-repeat: no-repeat !important;
                 background-size: cover !important;
@@ -508,5 +508,9 @@
        
             .after-galeria-text{
                font-size: 4vw;
-            }            
+            }   
+            
+            .frase{
+                font-size: 2.5vw !important;
+            }
         }

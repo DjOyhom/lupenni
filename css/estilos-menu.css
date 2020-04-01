@@ -103,7 +103,41 @@
     100% {top: -120%;}
 }
 
+.insta-menu-div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 
+.insta-menu-img{
+    background-image: url('../img/Grupo 12-v@2x.png');
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+.insta-menu-img-azul{
+    background-image: url('../img/Grupo 12@2x.png');
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.5s;
+}
+
+
+.insta-menu-text{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
 
 .nav-icon {
     position: fixed;

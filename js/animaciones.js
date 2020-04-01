@@ -3,9 +3,9 @@ document.onscroll = function(){
     // animaciones del index
     try {
         var top  = window.pageYOffset || document.documentElement.scrollTop;
-        var indexfoto1 = document.getElementById('indexfoto1').offsetTop;
-        var indexfoto2 = document.getElementById('indexfoto2').offsetTop;
-        var indexfoto3 = document.getElementById('indexfoto3').offsetTop;
+        var indexfoto1 = document.getElementById('indexfoto1').offsetTop + 300;
+        var indexfoto2 = document.getElementById('indexfoto2').offsetTop + 300;
+        var indexfoto3 = document.getElementById('indexfoto3').offsetTop + 300;
         var tamVentCli = window.innerHeight;
     
         if(top >= indexfoto1 - tamVentCli && top <= indexfoto1 + tamVentCli){
@@ -100,3 +100,10 @@ document.onscroll = function(){
         
     }
 };
+
+function instamenuazul(){
+    document.getElementById('divmenuinsta').classList.add("insta-menu-img-azul");
+}
+function instamenu(){
+    document.getElementById('divmenuinsta').classList.remove("insta-menu-img-azul");
+}
