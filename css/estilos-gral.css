@@ -64,10 +64,10 @@ h4{
 .btn-enviar-contacto{
     background-color: white;
     color: var(--violeta);
-    height: 6vw;
+    height: 4vw;
     font-family: 'Trade Gothic 18 Condensed';
     padding: 0px 3vw;
-    font-size: 3vw;
+    font-size: 2vw;
     border: none;
     text-decoration: none;
     animation: white-back 0.3s;
@@ -232,17 +232,16 @@ h4{
 .btn-frase{
     background-color: white;
     color: var(--violeta);
-    height: 6vw;
+    height: 4vw;
     font-family: 'Trade Gothic 18 Condensed';
     padding: 0px 3vw;
-    font-size: 3vw;
+    font-size: 2vw;
     border: none;
     text-decoration: none;
     animation: white-back 0.3s;
     animation-fill-mode: forwards;
 }
 .btn-frase:hover{
-    /* sd */
     animation: violeta-back 0.3s;
     animation-fill-mode: forwards;
 }
