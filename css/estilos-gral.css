@@ -294,7 +294,16 @@ h4{
 
      /* CONTACTO------------------------------------- */
 
+    .contacto-container{
+        height: 800px;
+        width: 100%;
+        background-color: var(--gris);
+        position: relative;
+    }
+
      .btn-enviar-contacto{
+        height: 8vw;
+        font-size: 4vw;
         width: 100% !important;
     }
 
@@ -363,6 +372,18 @@ h4{
         background-size: cover;
         display: flex;
         align-items: center;
+    }
+
+    .frase-after-contacto{
+        font-size: 8vw !important;
+    }
+
+    .btn-frase{
+        background-color: white;
+        color: var(--violeta);
+        height: 8vw;
+        padding: 0px 4vw;
+        font-size: 4vw;
     }
 
     .nav-icon {

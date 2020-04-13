@@ -39,7 +39,7 @@
 .menu-items-div{
     width: 100%;
     padding: 50px 0px 0px 50px;
-    height: 100%;
+    height: calc(100% - 50px);
 }
 
 .menu-item{
