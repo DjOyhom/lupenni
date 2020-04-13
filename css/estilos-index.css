@@ -161,8 +161,9 @@
                 color: white;
                 padding-left: 5vw;
                 font-family: 'Trade Gothic 20 Condensed';
-                line-height: 12vw;
+                line-height: 11vw;
                 font-size: 12vw;
+                margin-bottom: 20px;
             }
 
             .after-galeria-tabla{
