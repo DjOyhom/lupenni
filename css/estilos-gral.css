@@ -381,7 +381,7 @@ h4{
     .btn-frase{
         background-color: white;
         color: var(--violeta);
-        height: 8vw;
+        height: svw;
         padding: 0px 4vw;
         font-size: 4vw;
     }
