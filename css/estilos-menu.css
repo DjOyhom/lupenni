@@ -53,6 +53,7 @@
     color: white;
     animation: border-azul 0.5s;
     animation-fill-mode: forwards;
+    cursor: pointer;
 }
 
 .menu-item:hover{
