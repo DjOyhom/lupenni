@@ -25,6 +25,11 @@ function move(){
     }
 }
 
+function goinsta(){
+    window.location = "https://instagram.com/lupenni.studio"
+}
+
+
 try {
 
     document.onkeydown = function(evt) {
