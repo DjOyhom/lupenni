@@ -126,3 +126,11 @@ body{
   width: 40%;
   opacity: 0;
 }
+
+@media screen and (max-width: 950px) {
+  .galeria-fotos{
+    
+    background-color: white;
+    padding: 5% 5% 5% 5%;
+  }
+}
