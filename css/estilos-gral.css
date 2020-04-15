@@ -415,11 +415,11 @@ h4{
     }
     
     .container-info-header-div{
-        height: 90% !important; 
+        height: calc(100% - 200px) !important; 
         width: 80% !important;  
         left: 0px !important; 
         top: 0px !important; 
-        padding: 10%;
+        padding: 100px 10%;
     }
 
 }
