@@ -19,87 +19,101 @@
     <!-- FAV ICON -->
     <link rel="icon" type="image/png" href="./img/fav.png">
     <!-- PACE -->
-    <link href="./lib/Pace/pace-theme-flash.css" rel="stylesheet" />
-    <script src="./lib/Pace/pace.min.js"></script>
+    <!-- <link href="./lib/Pace/pace-theme-flash.css" rel="stylesheet" />
+    <script src="./lib/Pace/pace.min.js"></script> -->
     
+
     <style>
-        .img-cont{
-            width: 30%; position: relative; left: 5%; top: 5%;
+
+        .div-container-contacto-section{
+            width: 100%; position: relative;display: flex; justify-content: center;
         }
-        .txt-h1-cont{
-           
-            white-space:nowrap;
-            background: white !important;
-            padding: 0% 3vw;
-            font-family: 'Trade Gothic 20 Condensed';
-            font-size: 12vw;
-            color: var(--violeta);
+
+        .div-izquierda-contacto-section{
+            width: 40%; margin-left: 5%; 
         }
-        .div-foto-txt-cont{
-            width: 100%; background-color: red; position: relative;
+
+        .div-derecha-contacto-section{
+            width: 50%; margin-right: 5%; background-color: red;
+        }
+
+        .h1-contacto-section{
+            background-color: white; padding: 0 5%; color: var(--violeta); font-size: 8vw; width: max-content;transform: translate(-10vw, 0vw); margin-top: 10vw; 
         }
 
         @media screen and (max-width: 950px) {
-        .img-cont{
-            min-width: 100%;
-            height: auto; position: relative; left: 0% !important; top: 0% !important;
-        }
-        .txt-h1-cont{
-            transform: translateY(-200%);
-            
-            width: 100% !important;
-            right: 0% !important;
-            position: relative;
-            background: white !important;
-            padding: 0% 3vw;
-            font-family: 'Trade Gothic 20 Condensed';
-            font-size: 12vw;
-            margin: 0;
-            color: var(--violeta);
-            text-align: center;
+
+            .div-container-contacto-section{
+                width: 100% !important; 
+                position: relative !important;
+                display: block !important; 
+            }
+
+            .div-izquierda-contacto-section{
+                width: 100% !important; 
+                margin-left: 0% !important; 
+            }
+
+            .div-derecha-contacto-section{
+                width: 100% !important; 
+                margin-right: 0% !important; 
+                background-color: red !important;
+            }
+
+            .h1-contacto-section{
+                background-color: white; 
+                padding: 0 5%; 
+                color: #000 !important; 
+                font-size: 8vw; 
+                text-align: center;
+                width: 90% !important;
+                transform: translate(0vw, -20vw) !important; 
+                margin-top: 0vw !important; 
+                mix-blend-mode: screen;
+            }
+
         }
 
-        .div-foto-txt-cont{
-            width: 100%; height: 130vh; background-color: red; position: relative;
-        }
-
-        }
     </style>
+
+
 
 </head>
 <body>
 
-    <img class="lupenni-logo " id="logolupenni" src="./img/Logo@2x.pwidth: 100%; height: 100vh; background-color: red; position: relative;ng" alt="">
+    <img class="lupenni-logo" id="logolupenni"  src="./img/Logo@2x.png" alt="">
     <div class="nav-icon " id="btnburger" onclick="menu()">
         <div></div>
     </div>
 
     <section>
-        <div class="back-gris-cont-gal"></div>
-        <div class="back-white-cont-gal"></div>
-        <div class="cont-gal-info-header">
-            <h1 class="h1-info-cont-gal">Contacto</h1>
-            <p class="p-info-cont-gal">Un gran salto para ti ya sea profesionalmente o por hobby. Yo ya estoy lista para comenzar esta hermosa experiencia. Hagámoslo.</p>
+        <div class="container-header-div">
+            <div class="gris-header-div"></div>
+            <div class="blanco-header-div" id="afterintro"></div>
+            <div class="container-info-header-div">
+                <h1 class="h1-info-cont-gal">Contacto</h1>
+                <p class="p-info-cont-gal">Un gran salto para ti ya sea profesionalmente o por hobby. Yo ya estoy lista para comenzar esta hermosa experiencia. Hagámoslo.</p>
+            </div>
         </div>
     </section>
 
-    <div style="width: 100%; background-color: aqua; display: flex; justify-content: center; align-items: flex-start;">
-        <div style="margin: 5%; height: 800px; background-color: blue;display: inline-flex;"></div>
-        <div style="display: inline-flex; height: 180px; background-color: black; transform: translate(-25%, +100%);">
-            <h1 class="txt-h1-cont">Lucía Pennino</h1>
+
+    <div id="afterintro" class="div-container-contacto-section">
+        <div class="div-izquierda-contacto-section">
+            <img src="./img/DSC_7293.png"  style="width:100%" alt="">
         </div>
+
+        <div class="div-derecha-contacto-section">
+            <h1 class="h1-contacto-section">Lucía Peninno</h1>
+            <p >Hola, mi nombre es Lucía. Soy quien va a tener el placer de tenerte en el estudio enseñándote todo lo que sé.</p>
+            <p >E-mail: <a href="" >hola@lupenni.com</a> <br>
+                Teléfono: <a href="" >094 092 463</a></p>
+        </div>
+
     </div>
 
 
 
-    <div class="div-foto-txt-cont">
-        <div>
-            <img class="img-cont" src="./img/DSC_7293.png" alt="">
-        </div>
-        <div style="position: relative; width: 100%;">
-            <h1 class="txt-h1-cont">Lucía Pennino</h1>
-        </div>
-    </div>
     
     <!-- <section id="afterintro" class="about-section">
         <div class="about-me">
