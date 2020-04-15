@@ -95,13 +95,14 @@
 }
 
 @keyframes top-in {
-    0% {top: -120%;}
+    0% {top: -1200%;}
+    1%{ top:-200%; }
     100% {top: 0%;}
 }
 @keyframes top-out {
     0% {top: 0%;}
-
-    100% {top: -120%;}
+    99%{top: -200%;}
+    100% {top: -1200%;}
 }
 
 .insta-menu-div{
