@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/estilos-input-contacto.css">
     <link rel="stylesheet" href="./css/estilos-niveles.css">
     <link rel="stylesheet" href="./css/estilos-menu.css">
+    <link rel="stylesheet" href="./css/constru.css">
     <link rel="stylesheet" href="./css/estilos-contacto.css">
     <!-- FAV ICON -->
     <link rel="icon" type="image/png" href="./img/fav.png">
@@ -22,13 +23,6 @@
     <!-- <link href="./lib/Pace/pace-theme-flash.css" rel="stylesheet" />
     <script src="./lib/Pace/pace.min.js"></script> -->
     
-
-    <style>
-
-        
-    </style>
-
-
 
 </head>
 <body>
@@ -147,7 +141,7 @@
                         <a id="programamenu" class="menu-item">Programa</a><br>
                         <a href="contacto.html" class="menu-item">Contacto</a><br>
                         <a href="galeria.html" class="menu-item">Galeria</a><br>
-                        <a href="empresas_amigas.html" class="menu-item">Empresas amigas</a><br>
+                        <a onclick="constru()" class="menu-item">Empresas amigas</a><br>
                     </div>
                     <div style="height: 30%;">
                         <a href="tel:+59894092463" class="menu-item-invert">094 092 463</a><br>
@@ -162,9 +156,20 @@
         </div>
     </div>
 
+
+    <div id="constru" class="constru">
+        <div class="div-1-constru">
+            <p class="p-1-constru">Este sitio aun se encuentra en construccion, disculpe las molestias causadas.</p>
+        </div>
+        <div class="div-2-constru">
+            <button class="btn-frase" onclick="constru()">Cerrar</button>  
+        </div>
+    </div>
+
     <div class="btn-up" id="up"></div>
 
     <script src="./js/menu.js "></script>
+    <script src="./js/constru.js "></script>
     <script src="./js/animaciones.js "></script>
 
 </body>
