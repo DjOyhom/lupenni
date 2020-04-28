@@ -33,7 +33,9 @@
 }
 
 .separador{
-    height: 3px; margin: 20vh 5% 20vh 5%; background-color: var(--azul); 
+    border-top: 20vh solid white;
+    border-bottom: 20vh solid white;
+    height: 3px; margin: 0vh 5% 0vh 5%; background-color: var(--azul); 
 }
 
 @media screen and (max-width: 950px) {
@@ -59,7 +61,8 @@
     }
 
     .separador{
-        margin: 10vh 5% 10vh 5% !important;
+        border-top: 10vh solid white;
+        border-bottom: 10vh solid white;
     }
 
     .h1-contacto-section{
