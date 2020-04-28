@@ -1,145 +1,77 @@
-.about-me{
-    padding-top: 5%;
-    height: 110vh;
-    background-color: white;
-    border-bottom: 3px solid var(--azul);
+.div-container-contacto-section{
+    width: 100%; position: relative;display: flex; justify-content: center;
 }
 
-.about-section{
-    height: 120vh;
-    padding: 0% 5% 0% 5%;
-    border-bottom: 10vh solid white !important;
+.div-izquierda-contacto-section{
+    width: 40%; margin-left: 5%; 
 }
 
-
-
-.about-foto{
-    padding: 10vh 0vw;
-    width: 30vw;
+.div-derecha-contacto-section{
+    width: 50%; margin-right: 5%; background-color: white;
 }
 
-.about-name{
-    position: absolute;
-    /* top: 140vh;
-    left: 30vw; */
-    background: white !important;
-    padding: 0% 3vw;
+.h1-contacto-section{
     font-family: 'Trade Gothic 20 Condensed';
-    font-size: 12vw;
-    margin: 0;
-    color: var(--violeta);
+    background-color: white; padding: 0 5%; color: var(--violeta); font-size: 10vw; width: max-content;transform: translate(-7vw, 0vw); margin-top: 8vw; 
 }
 
-.about-texto{
-    position: absolute;
-    top: 170vh;
-    left: 40vw;
-    width: 50vw;
-    background: white !important;
+.p-contacto-section{
     font-family: 'Trade Gothic 18 Condensed';
-    font-size: 50px;
-    text-align: left;
-    line-height: 60px;
-    margin: 0;
-    color: var(--gris);
+    font-size: 3vw;
 }
 
-.about-texto-info{
-    position: absolute;
-    top: 205vh;
-    left: 40vw;
-    width: 50vw;
-    background: white !important;
-    font-family: 'Trade Gothic 18 Condensed';
-    font-size: 40px;
-    text-align: left;
-    margin: 0;
-    color: var(--gris);
-}
-
-.about-a-info{
-    color: var(--azul);
-    font-weight: bold;
+.a-contacto-section{
+    font-family: 'Trade Gothic 20 Condensed';
     text-decoration: none;
+    color: var(--azul);
     transition: all 0.3s;
 }
 
-.about-a-info:hover{
+.a-contacto-section:hover{
     color: var(--violeta);
-    transition: all 0.3s;
+    transition: all 0.3s;            
+}
+
+.separador{
+    height: 3px; margin: 20vh 5% 20vh 5%; background-color: var(--azul); 
 }
 
 @media screen and (max-width: 950px) {
 
-    .about-section{
-        height: 190vh;
-        padding: 0px;
-        background-color: #fff;
+    .div-container-contacto-section{
+        width: 100% !important; 
+        position: relative !important;
+        display: block !important; 
     }
 
-    .about-foto{
-        padding: 0vw 0vw;
-        width: 100%;
+    .div-izquierda-contacto-section{
+        width: 100% !important; 
+        margin-left: 0% !important; 
     }
 
-    .about-name{
-        position: absolute;
-        top: 220vh;
-        left: 0vw !important;
-        /* background: white !important; */
-        padding: 0% 0vw;
-        font-family: 'Trade Gothic 20 Condensed';
-        font-size: 15vw;
-        /* margin: 0; */
-        /* color: var(--violeta); */
+    .div-derecha-contacto-section{
+        width: 100% !important; 
+        margin-right: 0% !important; 
+    }
 
-        background-color: #fff;
-        color: #000;
-        /* the magic property */
+    .p-contacto-section{
+        font-size: 5vw !important;
+    }
+
+    .separador{
+        margin: 10vh 5% 10vh 5% !important;
+    }
+
+    .h1-contacto-section{
+        background-color: white; 
+        padding: 0 5%; 
+        color: #000 !important; 
+        font-size: 8vw; 
+        text-align: center;
+        width: 90% !important;
+        transform: translate(0vw, -20vw) !important; 
+        margin-top: 0vw !important; 
         mix-blend-mode: screen;
-        width: 100% !important;
-        text-align: center;
     }
-
-    .about-me{
-        padding-top: 0px;
-    }
-
-    .about-texto{
-        position: absolute;
-        top: 270vh;
-        left: 0vw;
-        width: 100%;
-        background: white !important;
-        font-family: 'Trade Gothic 18 Condensed';
-        font-size: 55px;
-        text-align: center;
-        line-height: 60px;
-        margin: 0;
-        color: var(--gris);
-    }
-
-    .about-texto-info{
-        position: absolute;
-        top: 295vh;
-        left: 0vw;
-        width: 100%;
-        background: white !important;
-        font-family: 'Trade Gothic 18 Condensed';
-        font-size: 40px;
-        text-align: center;
-        margin: 0;
-        color: var(--gris);
-    }
-
-
-
-
-
-
 
 }
-
-
-
-

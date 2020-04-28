@@ -25,55 +25,7 @@
 
     <style>
 
-        .div-container-contacto-section{
-            width: 100%; position: relative;display: flex; justify-content: center;
-        }
-
-        .div-izquierda-contacto-section{
-            width: 40%; margin-left: 5%; 
-        }
-
-        .div-derecha-contacto-section{
-            width: 50%; margin-right: 5%; background-color: red;
-        }
-
-        .h1-contacto-section{
-            background-color: white; padding: 0 5%; color: var(--violeta); font-size: 8vw; width: max-content;transform: translate(-10vw, 0vw); margin-top: 10vw; 
-        }
-
-        @media screen and (max-width: 950px) {
-
-            .div-container-contacto-section{
-                width: 100% !important; 
-                position: relative !important;
-                display: block !important; 
-            }
-
-            .div-izquierda-contacto-section{
-                width: 100% !important; 
-                margin-left: 0% !important; 
-            }
-
-            .div-derecha-contacto-section{
-                width: 100% !important; 
-                margin-right: 0% !important; 
-                background-color: red !important;
-            }
-
-            .h1-contacto-section{
-                background-color: white; 
-                padding: 0 5%; 
-                color: #000 !important; 
-                font-size: 8vw; 
-                text-align: center;
-                width: 90% !important;
-                transform: translate(0vw, -20vw) !important; 
-                margin-top: 0vw !important; 
-                mix-blend-mode: screen;
-            }
-
-        }
-
+        
     </style>
 
 
@@ -105,29 +57,21 @@
 
         <div class="div-derecha-contacto-section">
             <h1 class="h1-contacto-section">Lucía Peninno</h1>
-            <p >Hola, mi nombre es Lucía. Soy quien va a tener el placer de tenerte en el estudio enseñándote todo lo que sé.</p>
-            <p >E-mail: <a href="" >hola@lupenni.com</a> <br>
-                Teléfono: <a href="" >094 092 463</a></p>
+            <div style="padding-left: 5vw;">
+                <p class="p-contacto-section">Hola, mi nombre es Lucía. Soy quien va a tener el placer de tenerte en el estudio enseñándote todo lo que sé.</p>
+                <p class="p-contacto-section">E-mail: <a class="a-contacto-section" href="mailto:hola@lupenni.com" >hola@lupenni.com</a> <br>
+                    Teléfono: <a class="a-contacto-section" href="tel://+59894092463" >094 092 463</a></p>
+            </div>
         </div>
 
     </div>
 
 
-
-    
-    <!-- <section id="afterintro" class="about-section">
-        <div class="about-me">
-            <img class="about-foto" src="./img/DSC_7293.png" alt="">
-            <h1 class="about-name">Lucía Pennino</h1>
-            <p class="about-texto">Hola, mi nombre es Lucía. Soy quien va a tener el placer de tenerte en el estudio enseñándote todo lo que sé.</p>
-            <p class="about-texto-info">E-mail: <a href="" class="about-a-info">hola@lupenni.com</a> <br>
-                Teléfono: <a href="" class="about-a-info">094 092 463</a></p>
-        </div>
-    </section> -->
+    <div class="separador"></div>
 
     <section>
         <div class="contacto">
-            <h1 class="margin-cero contacto-h1">Contacto</h1>
+            <h1 class="margin-cero contacto-h1">Escribeme</h1>
 
             <div class="contacto-container">
                 <div class="omrs-input-group contacto-nombre">
